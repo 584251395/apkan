@@ -1,0 +1,2836 @@
+package com.apkanalysis.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import static javax.persistence.GenerationType.IDENTITY;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+/**
+ * Permissiondeclared entity. @author MyEclipse Persistence Tools
+ */
+@Entity
+@Table(name = "permissiondeclared", catalog = "antivirus")
+public class Permissiondeclared implements java.io.Serializable {
+
+	// Fields
+
+	private Integer id;
+	private String apkmd5;
+	private String android99permission99vibrate;
+	private String android99permission99writeApnSettings;
+	private String android99permission99receiveBootCompleted;
+	private String android99permission99internet;
+	private String android99permission99disableKeyguard;
+	private String android99permission99accessNetworkState;
+	private String com99android99browser99permission99writeHistoryBookmarks;
+	private String android99permission99readPhoneState;
+	private String com99android99browser99permission99readHistoryBookmarks;
+	private String android99permission99writeExternalStorage;
+	private String android99permission99modifyPhoneState;
+	private String android99permission99accessFineLocation;
+	private String android99permission99systemOverlayWindow;
+	private String android99permission99systemAlertWindow;
+	private String com99android99launcher99permission99installShortcut;
+	private String android99permission99readLogs;
+	private String android99permission99accessWifiState;
+	private String android99permission99accessCoarseLocation;
+	private String android99permission99wakeLock;
+	private String android99permission99getTasks;
+	private String android99permission99accessDownloadManager;
+	private String com99android99launcher99permission99readSettings;
+	private String com99android99launcher99permission99writeSettings;
+	private String android99permission99camera;
+	private String android99permission99writeSms;
+	private String android99permission99receiveSms;
+	private String android99permission99readSms;
+	private String android99permission99restartPackages;
+	private String android99permission99sendSms;
+	private String android99permission99receiveUserPresent;
+	private String android99permission99broadcastSms;
+	private String android99permission99readContacts;
+	private String android99permission99changeNetworkState;
+	private String android99permission99writeSettings;
+	private String android99permission99callPhone;
+	private String android99permission99processOutgoingCalls;
+	private String android99permission99writeCallLog;
+	private String android99permission99readCallLog;
+	private String android99permission99changeWifiState;
+	private String android99permission99mountUnmountFilesystems;
+	private String com99android99launcher99permission99uninstallShortcut;
+	private String android99permission99accesMockLocation;
+	private String android99permission99receiveWapPush;
+	private String android99permission99setWallpaper;
+	private String android99permission99baiduLocationService;
+	private String android99permission99recordVideo;
+	private String android99permission99accessLocationExtraCommands;
+	private String android99permission99clearAppCache;
+	private String android99permission99readCalendar;
+	private String android99permission99writeContacts;
+	private String android99permission99updateAppOpsStats;
+	private String android99permission99killBackgroundProcesses;
+	private String android99permission99installPackages;
+	private String android99permission99readExternalStorage;
+	private String android99permission99deletePackages;
+	private String android99permission99changeComponentEnabledState;
+	private String android99permission99reboot;
+	private String android99permission99recordAudio;
+	private String android99permission99devicePower;
+	private String android99permission99bluetooth;
+	private String android99permission99reorderTasks;
+	private String android99permission99manageAccounts;
+	private String android99permission99authenticateAccounts;
+	private String android99permission99broadcastSticky;
+	private String android99permission99modifyAudioSettings;
+	private String android99permission99getAccounts;
+	private String net99cellagent99permission99c2dMessage;
+	private String com99google99android99c2dm99permission99receive;
+	private String com99motorola99dlauncher99permission99readSettings;
+	private String com99motorola99dlauncher99permission99installShortcut;
+	private String com99htc99launcher99permission99readSettings;
+	private String com99lge99launcher99permission99installShortcut;
+	private String com99motorola99launcher99permission99readSettings;
+	private String com99motorola99launcher99permission99installShortcut;
+	private String com99fede99launcher99permission99readSettings;
+	private String org99adw99launcher99permission99readSettings;
+	private String com99lge99launcher99permission99readSettings;
+	private String android99permission99getPackageSize;
+	private String android99permission99receiveMms;
+	private String com99neverlostmydroid99permission99c2dMessage;
+	private String android99permission99downloadWithoutNotification;
+	private String android99permission99accessCoarseUpdates;
+	private String android99permission99permissionName;
+	private String android99permission99flashlight;
+	private String android99permission99assessPhoneState;
+	private String android99permission99packageUsageStats;
+	private String android99permission99readApnSettings;
+	private String android99permission99clearAppUserData;
+	private String rockchip99permission99fullScreen;
+	private String android99permission99accessLocation;
+	private String android99permission99readMms;
+	private String android99permission99accessCellId;
+	private String android99permission99accessAssistedGps;
+	private String android99permission99accessGps;
+	private String android99permission99wifiLock;
+	private String android99permission99hardwareTest;
+	private String android99permission99accessMockLocation;
+	private String android99permission99bluetoothAdmin;
+	private String android99permission99expandStatusBar;
+	private String android99permission99updateDeviceStats;
+	private String android99permission99changeConfiguration;
+	private String android99permission99writeSecureSettings;
+	private String android99permission99runInstrumentation;
+	private String android99permission99phoneState;
+	private String android99permission99batteryStats;
+	private String com99android99xwlauncher99permission99readSettings;
+	private String android99permission99setWallpaperHints;
+	private String com99android99xwlauncher99permission99writeSettings;
+	private String android99permission99bindAppwidget;
+	private String android99permission99persistentActivity;
+	private String android99permission99deleteCacheFiles;
+	private String android99permission99bootCompleted;
+	private String android99permission99callPrivileged;
+	private String com99ikangoo99whatssex99permission99c2dMessage;
+	private String android99permission99addSystemService;
+	private String com99android99vending99billing;
+	private String com99android99vending99checkLicense;
+	private String com99kiloo99kkkkkkkYwx99permission99c2dMessage;
+	private String android99permission99location;
+	private String android99permission99globalSearch;
+	private String android99permission99setTimeZone;
+	private String com99motorola99launcher99permission99writeSettings;
+	private String com99fede99launcher99permission99writeSettings;
+	private String com99htc99launcher99permission99writeSettings;
+	private String com99lge99launcher99permission99writeSettings;
+	private String com99motorola99dlauncher99permission99writeSettings;
+	private String org99adw99launcher99permission99writeSettings;
+	private String android99permission99raisedThreadPriority;
+	private String android99permission99interactAcrossUsersFull;
+	private String com99jolopay99permission99jolopay;
+	private String android99permission99sendto;
+	private String com99saavn99android99permission99c2dMessage;
+	private String com99hengtalk99fishjoy99control99menu99permission99jpushMessage;
+	private String com99ut99permission99deviceState;
+	private String com99youyuan99yyhl99permission99jpushMessage;
+	private String android99permission99readOwnerData;
+	private String android99permission99accessSurfaceFlinger;
+	private String android99permission99forceBack;
+	private String android99permission99dump;
+	private String android99permission99setDebugApp;
+	private String android99permission99controlLocationUpdates;
+	private String android99permission99useCredentials;
+	private String android99permission99broadcastWapPush;
+	private String android99permission99changeWifiMulticastState;
+	private String android99permission99statusBar;
+	private String android99permission99broadcastPackageRemoved;
+	private String android99permission99setTime;
+	private String android99permission99signalPersistentProcesses;
+	private String android99permission99setPreferredApplications;
+	private String com99android99alarm99permission99setAlarm;
+	private String android99permission99injectEvents;
+	private String android99permission99readFrameBuffer;
+	private String android99permission99setAlwaysFinish;
+	private String android99permission99useSip;
+	private String android99permission99setOrientation;
+	private String com99huawei99launcher399permission99readSettings;
+	private String android99permission99writeMediaStorage;
+	private String com99huawei99launcher299permission99readSettings;
+	private String com99qihoo36099launcher99permission99readSettings;
+	private String com99android99launcher399permission99readSettings;
+	private String com99anddoes99launcher99permission99readSettings;
+	private String com99android99launcher299permission99readSettings;
+	private String android99permission99setActivityWatcher;
+	private String com99huawei99android99launcher99permission99readSettings;
+	private String com99bbk99launcher299permission99readSettings;
+	private String com99aspire99mm99permission99readSettings;
+	private String android99permission99readSyncSettings;
+	private String android99permission99writeSyncSettings;
+	private String com99qihoo36099mobilesafe99shield99permission99broadcast;
+	private String com99qihoo36099mobilesafe99permission99broadcast;
+	private String getui99permission99getuiService;
+	private String android99permission99readSettings;
+	private String com99hengtalk99fruitbubble99permission99jpushMessage;
+	private String com99huawei99android99launcher99permission99writeSettings;
+	private String com99sec99android99app99twlauncher99writeSettings;
+	private String com99qihoo99appstore99rtservice99accessRtservice;
+	private String android99permission99writeOwnerData;
+	private String com99qihoo36099launcher99permission99writeSettings;
+	private String com99qihoo36099home99permission99readSettings;
+	private String com99lenovo99launcher99permission99writeSettings;
+	private String com99sec99android99app99twlauncher99readSettings;
+	private String org99adwfreak99launcher99permission99writeSettings;
+	private String com99nd99android99launcher99permission99readSettings;
+	private String com99gau99go99launcherex99permission99writeSettings;
+	private String com99lenovo99launcher99permission99readSettings;
+	private String android99permission99accessCacheFilesystem;
+	private String com99gau99go99launcherex99permission99readSettings;
+	private String com99anddoes99launcher99permission99writeSettings;
+	private String com99android99launcher299permission99writeSettings;
+	private String com99nd99android99launcher99permission99writeSettings;
+	private String org99adwfreak99launcher99permission99readSettings;
+	private String com99qihoo36099home99permission99writeSettings;
+	private String com99hzsj99dsjy99permission99jpushMessage;
+	private String com99google99android99providers99gsf99permission99readGservices;
+	private String asia99ivity99qifu99android99permission99mapsReceive;
+	private String android99permission99globalSearchControl;
+	private String android99intent99action99serviceStateChangedAction;
+	private String android99permission99silent;
+	private String android99intent99action99phoneState;
+	private String android99permission99forceStopPackages;
+	private String scott99permission99myBroadcastPermission;
+	private String android99permission99readSyncStats;
+	private String android99permission99accessAgjAllDownloads;
+	private String android99permission99accessAgjDownloadAccess;
+	private String android99permission99accessAgjDownloadManager;
+	private String android99permissions99accessFineLocation;
+	private String andorid99permission99writeSettings;
+	private String andorid99permission99killBackgroundProcesses;
+	private String android99permission99bindDeviceAdmin;
+	private String android99permission99accessFindLocation;
+	private String android99permission99factoryTest;
+	private String android99permission99internalSystemWindow;
+	private String android99permission99mountFormatFilesystems;
+	private String com99android99launcher99permission99wakeLock;
+
+	// Constructors
+
+	/** default constructor */
+	public Permissiondeclared() {
+	}
+
+	/** full constructor */
+	public Permissiondeclared(
+			String apkmd5,
+			String android99permission99vibrate,
+			String android99permission99writeApnSettings,
+			String android99permission99receiveBootCompleted,
+			String android99permission99internet,
+			String android99permission99disableKeyguard,
+			String android99permission99accessNetworkState,
+			String com99android99browser99permission99writeHistoryBookmarks,
+			String android99permission99readPhoneState,
+			String com99android99browser99permission99readHistoryBookmarks,
+			String android99permission99writeExternalStorage,
+			String android99permission99modifyPhoneState,
+			String android99permission99accessFineLocation,
+			String android99permission99systemOverlayWindow,
+			String android99permission99systemAlertWindow,
+			String com99android99launcher99permission99installShortcut,
+			String android99permission99readLogs,
+			String android99permission99accessWifiState,
+			String android99permission99accessCoarseLocation,
+			String android99permission99wakeLock,
+			String android99permission99getTasks,
+			String android99permission99accessDownloadManager,
+			String com99android99launcher99permission99readSettings,
+			String com99android99launcher99permission99writeSettings,
+			String android99permission99camera,
+			String android99permission99writeSms,
+			String android99permission99receiveSms,
+			String android99permission99readSms,
+			String android99permission99restartPackages,
+			String android99permission99sendSms,
+			String android99permission99receiveUserPresent,
+			String android99permission99broadcastSms,
+			String android99permission99readContacts,
+			String android99permission99changeNetworkState,
+			String android99permission99writeSettings,
+			String android99permission99callPhone,
+			String android99permission99processOutgoingCalls,
+			String android99permission99writeCallLog,
+			String android99permission99readCallLog,
+			String android99permission99changeWifiState,
+			String android99permission99mountUnmountFilesystems,
+			String com99android99launcher99permission99uninstallShortcut,
+			String android99permission99accesMockLocation,
+			String android99permission99receiveWapPush,
+			String android99permission99setWallpaper,
+			String android99permission99baiduLocationService,
+			String android99permission99recordVideo,
+			String android99permission99accessLocationExtraCommands,
+			String android99permission99clearAppCache,
+			String android99permission99readCalendar,
+			String android99permission99writeContacts,
+			String android99permission99updateAppOpsStats,
+			String android99permission99killBackgroundProcesses,
+			String android99permission99installPackages,
+			String android99permission99readExternalStorage,
+			String android99permission99deletePackages,
+			String android99permission99changeComponentEnabledState,
+			String android99permission99reboot,
+			String android99permission99recordAudio,
+			String android99permission99devicePower,
+			String android99permission99bluetooth,
+			String android99permission99reorderTasks,
+			String android99permission99manageAccounts,
+			String android99permission99authenticateAccounts,
+			String android99permission99broadcastSticky,
+			String android99permission99modifyAudioSettings,
+			String android99permission99getAccounts,
+			String net99cellagent99permission99c2dMessage,
+			String com99google99android99c2dm99permission99receive,
+			String com99motorola99dlauncher99permission99readSettings,
+			String com99motorola99dlauncher99permission99installShortcut,
+			String com99htc99launcher99permission99readSettings,
+			String com99lge99launcher99permission99installShortcut,
+			String com99motorola99launcher99permission99readSettings,
+			String com99motorola99launcher99permission99installShortcut,
+			String com99fede99launcher99permission99readSettings,
+			String org99adw99launcher99permission99readSettings,
+			String com99lge99launcher99permission99readSettings,
+			String android99permission99getPackageSize,
+			String android99permission99receiveMms,
+			String com99neverlostmydroid99permission99c2dMessage,
+			String android99permission99downloadWithoutNotification,
+			String android99permission99accessCoarseUpdates,
+			String android99permission99permissionName,
+			String android99permission99flashlight,
+			String android99permission99assessPhoneState,
+			String android99permission99packageUsageStats,
+			String android99permission99readApnSettings,
+			String android99permission99clearAppUserData,
+			String rockchip99permission99fullScreen,
+			String android99permission99accessLocation,
+			String android99permission99readMms,
+			String android99permission99accessCellId,
+			String android99permission99accessAssistedGps,
+			String android99permission99accessGps,
+			String android99permission99wifiLock,
+			String android99permission99hardwareTest,
+			String android99permission99accessMockLocation,
+			String android99permission99bluetoothAdmin,
+			String android99permission99expandStatusBar,
+			String android99permission99updateDeviceStats,
+			String android99permission99changeConfiguration,
+			String android99permission99writeSecureSettings,
+			String android99permission99runInstrumentation,
+			String android99permission99phoneState,
+			String android99permission99batteryStats,
+			String com99android99xwlauncher99permission99readSettings,
+			String android99permission99setWallpaperHints,
+			String com99android99xwlauncher99permission99writeSettings,
+			String android99permission99bindAppwidget,
+			String android99permission99persistentActivity,
+			String android99permission99deleteCacheFiles,
+			String android99permission99bootCompleted,
+			String android99permission99callPrivileged,
+			String com99ikangoo99whatssex99permission99c2dMessage,
+			String android99permission99addSystemService,
+			String com99android99vending99billing,
+			String com99android99vending99checkLicense,
+			String com99kiloo99kkkkkkkYwx99permission99c2dMessage,
+			String android99permission99location,
+			String android99permission99globalSearch,
+			String android99permission99setTimeZone,
+			String com99motorola99launcher99permission99writeSettings,
+			String com99fede99launcher99permission99writeSettings,
+			String com99htc99launcher99permission99writeSettings,
+			String com99lge99launcher99permission99writeSettings,
+			String com99motorola99dlauncher99permission99writeSettings,
+			String org99adw99launcher99permission99writeSettings,
+			String android99permission99raisedThreadPriority,
+			String android99permission99interactAcrossUsersFull,
+			String com99jolopay99permission99jolopay,
+			String android99permission99sendto,
+			String com99saavn99android99permission99c2dMessage,
+			String com99hengtalk99fishjoy99control99menu99permission99jpushMessage,
+			String com99ut99permission99deviceState,
+			String com99youyuan99yyhl99permission99jpushMessage,
+			String android99permission99readOwnerData,
+			String android99permission99accessSurfaceFlinger,
+			String android99permission99forceBack,
+			String android99permission99dump,
+			String android99permission99setDebugApp,
+			String android99permission99controlLocationUpdates,
+			String android99permission99useCredentials,
+			String android99permission99broadcastWapPush,
+			String android99permission99changeWifiMulticastState,
+			String android99permission99statusBar,
+			String android99permission99broadcastPackageRemoved,
+			String android99permission99setTime,
+			String android99permission99signalPersistentProcesses,
+			String android99permission99setPreferredApplications,
+			String com99android99alarm99permission99setAlarm,
+			String android99permission99injectEvents,
+			String android99permission99readFrameBuffer,
+			String android99permission99setAlwaysFinish,
+			String android99permission99useSip,
+			String android99permission99setOrientation,
+			String com99huawei99launcher399permission99readSettings,
+			String android99permission99writeMediaStorage,
+			String com99huawei99launcher299permission99readSettings,
+			String com99qihoo36099launcher99permission99readSettings,
+			String com99android99launcher399permission99readSettings,
+			String com99anddoes99launcher99permission99readSettings,
+			String com99android99launcher299permission99readSettings,
+			String android99permission99setActivityWatcher,
+			String com99huawei99android99launcher99permission99readSettings,
+			String com99bbk99launcher299permission99readSettings,
+			String com99aspire99mm99permission99readSettings,
+			String android99permission99readSyncSettings,
+			String android99permission99writeSyncSettings,
+			String com99qihoo36099mobilesafe99shield99permission99broadcast,
+			String com99qihoo36099mobilesafe99permission99broadcast,
+			String getui99permission99getuiService,
+			String android99permission99readSettings,
+			String com99hengtalk99fruitbubble99permission99jpushMessage,
+			String com99huawei99android99launcher99permission99writeSettings,
+			String com99sec99android99app99twlauncher99writeSettings,
+			String com99qihoo99appstore99rtservice99accessRtservice,
+			String android99permission99writeOwnerData,
+			String com99qihoo36099launcher99permission99writeSettings,
+			String com99qihoo36099home99permission99readSettings,
+			String com99lenovo99launcher99permission99writeSettings,
+			String com99sec99android99app99twlauncher99readSettings,
+			String org99adwfreak99launcher99permission99writeSettings,
+			String com99nd99android99launcher99permission99readSettings,
+			String com99gau99go99launcherex99permission99writeSettings,
+			String com99lenovo99launcher99permission99readSettings,
+			String android99permission99accessCacheFilesystem,
+			String com99gau99go99launcherex99permission99readSettings,
+			String com99anddoes99launcher99permission99writeSettings,
+			String com99android99launcher299permission99writeSettings,
+			String com99nd99android99launcher99permission99writeSettings,
+			String org99adwfreak99launcher99permission99readSettings,
+			String com99qihoo36099home99permission99writeSettings,
+			String com99hzsj99dsjy99permission99jpushMessage,
+			String com99google99android99providers99gsf99permission99readGservices,
+			String asia99ivity99qifu99android99permission99mapsReceive,
+			String android99permission99globalSearchControl,
+			String android99intent99action99serviceStateChangedAction,
+			String android99permission99silent,
+			String android99intent99action99phoneState,
+			String android99permission99forceStopPackages,
+			String scott99permission99myBroadcastPermission,
+			String android99permission99readSyncStats,
+			String android99permission99accessAgjAllDownloads,
+			String android99permission99accessAgjDownloadAccess,
+			String android99permission99accessAgjDownloadManager,
+			String android99permissions99accessFineLocation,
+			String andorid99permission99writeSettings,
+			String andorid99permission99killBackgroundProcesses,
+			String android99permission99bindDeviceAdmin,
+			String android99permission99accessFindLocation,
+			String android99permission99factoryTest,
+			String android99permission99internalSystemWindow,
+			String android99permission99mountFormatFilesystems,
+			String com99android99launcher99permission99wakeLock) {
+		this.apkmd5 = apkmd5;
+		this.android99permission99vibrate = android99permission99vibrate;
+		this.android99permission99writeApnSettings = android99permission99writeApnSettings;
+		this.android99permission99receiveBootCompleted = android99permission99receiveBootCompleted;
+		this.android99permission99internet = android99permission99internet;
+		this.android99permission99disableKeyguard = android99permission99disableKeyguard;
+		this.android99permission99accessNetworkState = android99permission99accessNetworkState;
+		this.com99android99browser99permission99writeHistoryBookmarks = com99android99browser99permission99writeHistoryBookmarks;
+		this.android99permission99readPhoneState = android99permission99readPhoneState;
+		this.com99android99browser99permission99readHistoryBookmarks = com99android99browser99permission99readHistoryBookmarks;
+		this.android99permission99writeExternalStorage = android99permission99writeExternalStorage;
+		this.android99permission99modifyPhoneState = android99permission99modifyPhoneState;
+		this.android99permission99accessFineLocation = android99permission99accessFineLocation;
+		this.android99permission99systemOverlayWindow = android99permission99systemOverlayWindow;
+		this.android99permission99systemAlertWindow = android99permission99systemAlertWindow;
+		this.com99android99launcher99permission99installShortcut = com99android99launcher99permission99installShortcut;
+		this.android99permission99readLogs = android99permission99readLogs;
+		this.android99permission99accessWifiState = android99permission99accessWifiState;
+		this.android99permission99accessCoarseLocation = android99permission99accessCoarseLocation;
+		this.android99permission99wakeLock = android99permission99wakeLock;
+		this.android99permission99getTasks = android99permission99getTasks;
+		this.android99permission99accessDownloadManager = android99permission99accessDownloadManager;
+		this.com99android99launcher99permission99readSettings = com99android99launcher99permission99readSettings;
+		this.com99android99launcher99permission99writeSettings = com99android99launcher99permission99writeSettings;
+		this.android99permission99camera = android99permission99camera;
+		this.android99permission99writeSms = android99permission99writeSms;
+		this.android99permission99receiveSms = android99permission99receiveSms;
+		this.android99permission99readSms = android99permission99readSms;
+		this.android99permission99restartPackages = android99permission99restartPackages;
+		this.android99permission99sendSms = android99permission99sendSms;
+		this.android99permission99receiveUserPresent = android99permission99receiveUserPresent;
+		this.android99permission99broadcastSms = android99permission99broadcastSms;
+		this.android99permission99readContacts = android99permission99readContacts;
+		this.android99permission99changeNetworkState = android99permission99changeNetworkState;
+		this.android99permission99writeSettings = android99permission99writeSettings;
+		this.android99permission99callPhone = android99permission99callPhone;
+		this.android99permission99processOutgoingCalls = android99permission99processOutgoingCalls;
+		this.android99permission99writeCallLog = android99permission99writeCallLog;
+		this.android99permission99readCallLog = android99permission99readCallLog;
+		this.android99permission99changeWifiState = android99permission99changeWifiState;
+		this.android99permission99mountUnmountFilesystems = android99permission99mountUnmountFilesystems;
+		this.com99android99launcher99permission99uninstallShortcut = com99android99launcher99permission99uninstallShortcut;
+		this.android99permission99accesMockLocation = android99permission99accesMockLocation;
+		this.android99permission99receiveWapPush = android99permission99receiveWapPush;
+		this.android99permission99setWallpaper = android99permission99setWallpaper;
+		this.android99permission99baiduLocationService = android99permission99baiduLocationService;
+		this.android99permission99recordVideo = android99permission99recordVideo;
+		this.android99permission99accessLocationExtraCommands = android99permission99accessLocationExtraCommands;
+		this.android99permission99clearAppCache = android99permission99clearAppCache;
+		this.android99permission99readCalendar = android99permission99readCalendar;
+		this.android99permission99writeContacts = android99permission99writeContacts;
+		this.android99permission99updateAppOpsStats = android99permission99updateAppOpsStats;
+		this.android99permission99killBackgroundProcesses = android99permission99killBackgroundProcesses;
+		this.android99permission99installPackages = android99permission99installPackages;
+		this.android99permission99readExternalStorage = android99permission99readExternalStorage;
+		this.android99permission99deletePackages = android99permission99deletePackages;
+		this.android99permission99changeComponentEnabledState = android99permission99changeComponentEnabledState;
+		this.android99permission99reboot = android99permission99reboot;
+		this.android99permission99recordAudio = android99permission99recordAudio;
+		this.android99permission99devicePower = android99permission99devicePower;
+		this.android99permission99bluetooth = android99permission99bluetooth;
+		this.android99permission99reorderTasks = android99permission99reorderTasks;
+		this.android99permission99manageAccounts = android99permission99manageAccounts;
+		this.android99permission99authenticateAccounts = android99permission99authenticateAccounts;
+		this.android99permission99broadcastSticky = android99permission99broadcastSticky;
+		this.android99permission99modifyAudioSettings = android99permission99modifyAudioSettings;
+		this.android99permission99getAccounts = android99permission99getAccounts;
+		this.net99cellagent99permission99c2dMessage = net99cellagent99permission99c2dMessage;
+		this.com99google99android99c2dm99permission99receive = com99google99android99c2dm99permission99receive;
+		this.com99motorola99dlauncher99permission99readSettings = com99motorola99dlauncher99permission99readSettings;
+		this.com99motorola99dlauncher99permission99installShortcut = com99motorola99dlauncher99permission99installShortcut;
+		this.com99htc99launcher99permission99readSettings = com99htc99launcher99permission99readSettings;
+		this.com99lge99launcher99permission99installShortcut = com99lge99launcher99permission99installShortcut;
+		this.com99motorola99launcher99permission99readSettings = com99motorola99launcher99permission99readSettings;
+		this.com99motorola99launcher99permission99installShortcut = com99motorola99launcher99permission99installShortcut;
+		this.com99fede99launcher99permission99readSettings = com99fede99launcher99permission99readSettings;
+		this.org99adw99launcher99permission99readSettings = org99adw99launcher99permission99readSettings;
+		this.com99lge99launcher99permission99readSettings = com99lge99launcher99permission99readSettings;
+		this.android99permission99getPackageSize = android99permission99getPackageSize;
+		this.android99permission99receiveMms = android99permission99receiveMms;
+		this.com99neverlostmydroid99permission99c2dMessage = com99neverlostmydroid99permission99c2dMessage;
+		this.android99permission99downloadWithoutNotification = android99permission99downloadWithoutNotification;
+		this.android99permission99accessCoarseUpdates = android99permission99accessCoarseUpdates;
+		this.android99permission99permissionName = android99permission99permissionName;
+		this.android99permission99flashlight = android99permission99flashlight;
+		this.android99permission99assessPhoneState = android99permission99assessPhoneState;
+		this.android99permission99packageUsageStats = android99permission99packageUsageStats;
+		this.android99permission99readApnSettings = android99permission99readApnSettings;
+		this.android99permission99clearAppUserData = android99permission99clearAppUserData;
+		this.rockchip99permission99fullScreen = rockchip99permission99fullScreen;
+		this.android99permission99accessLocation = android99permission99accessLocation;
+		this.android99permission99readMms = android99permission99readMms;
+		this.android99permission99accessCellId = android99permission99accessCellId;
+		this.android99permission99accessAssistedGps = android99permission99accessAssistedGps;
+		this.android99permission99accessGps = android99permission99accessGps;
+		this.android99permission99wifiLock = android99permission99wifiLock;
+		this.android99permission99hardwareTest = android99permission99hardwareTest;
+		this.android99permission99accessMockLocation = android99permission99accessMockLocation;
+		this.android99permission99bluetoothAdmin = android99permission99bluetoothAdmin;
+		this.android99permission99expandStatusBar = android99permission99expandStatusBar;
+		this.android99permission99updateDeviceStats = android99permission99updateDeviceStats;
+		this.android99permission99changeConfiguration = android99permission99changeConfiguration;
+		this.android99permission99writeSecureSettings = android99permission99writeSecureSettings;
+		this.android99permission99runInstrumentation = android99permission99runInstrumentation;
+		this.android99permission99phoneState = android99permission99phoneState;
+		this.android99permission99batteryStats = android99permission99batteryStats;
+		this.com99android99xwlauncher99permission99readSettings = com99android99xwlauncher99permission99readSettings;
+		this.android99permission99setWallpaperHints = android99permission99setWallpaperHints;
+		this.com99android99xwlauncher99permission99writeSettings = com99android99xwlauncher99permission99writeSettings;
+		this.android99permission99bindAppwidget = android99permission99bindAppwidget;
+		this.android99permission99persistentActivity = android99permission99persistentActivity;
+		this.android99permission99deleteCacheFiles = android99permission99deleteCacheFiles;
+		this.android99permission99bootCompleted = android99permission99bootCompleted;
+		this.android99permission99callPrivileged = android99permission99callPrivileged;
+		this.com99ikangoo99whatssex99permission99c2dMessage = com99ikangoo99whatssex99permission99c2dMessage;
+		this.android99permission99addSystemService = android99permission99addSystemService;
+		this.com99android99vending99billing = com99android99vending99billing;
+		this.com99android99vending99checkLicense = com99android99vending99checkLicense;
+		this.com99kiloo99kkkkkkkYwx99permission99c2dMessage = com99kiloo99kkkkkkkYwx99permission99c2dMessage;
+		this.android99permission99location = android99permission99location;
+		this.android99permission99globalSearch = android99permission99globalSearch;
+		this.android99permission99setTimeZone = android99permission99setTimeZone;
+		this.com99motorola99launcher99permission99writeSettings = com99motorola99launcher99permission99writeSettings;
+		this.com99fede99launcher99permission99writeSettings = com99fede99launcher99permission99writeSettings;
+		this.com99htc99launcher99permission99writeSettings = com99htc99launcher99permission99writeSettings;
+		this.com99lge99launcher99permission99writeSettings = com99lge99launcher99permission99writeSettings;
+		this.com99motorola99dlauncher99permission99writeSettings = com99motorola99dlauncher99permission99writeSettings;
+		this.org99adw99launcher99permission99writeSettings = org99adw99launcher99permission99writeSettings;
+		this.android99permission99raisedThreadPriority = android99permission99raisedThreadPriority;
+		this.android99permission99interactAcrossUsersFull = android99permission99interactAcrossUsersFull;
+		this.com99jolopay99permission99jolopay = com99jolopay99permission99jolopay;
+		this.android99permission99sendto = android99permission99sendto;
+		this.com99saavn99android99permission99c2dMessage = com99saavn99android99permission99c2dMessage;
+		this.com99hengtalk99fishjoy99control99menu99permission99jpushMessage = com99hengtalk99fishjoy99control99menu99permission99jpushMessage;
+		this.com99ut99permission99deviceState = com99ut99permission99deviceState;
+		this.com99youyuan99yyhl99permission99jpushMessage = com99youyuan99yyhl99permission99jpushMessage;
+		this.android99permission99readOwnerData = android99permission99readOwnerData;
+		this.android99permission99accessSurfaceFlinger = android99permission99accessSurfaceFlinger;
+		this.android99permission99forceBack = android99permission99forceBack;
+		this.android99permission99dump = android99permission99dump;
+		this.android99permission99setDebugApp = android99permission99setDebugApp;
+		this.android99permission99controlLocationUpdates = android99permission99controlLocationUpdates;
+		this.android99permission99useCredentials = android99permission99useCredentials;
+		this.android99permission99broadcastWapPush = android99permission99broadcastWapPush;
+		this.android99permission99changeWifiMulticastState = android99permission99changeWifiMulticastState;
+		this.android99permission99statusBar = android99permission99statusBar;
+		this.android99permission99broadcastPackageRemoved = android99permission99broadcastPackageRemoved;
+		this.android99permission99setTime = android99permission99setTime;
+		this.android99permission99signalPersistentProcesses = android99permission99signalPersistentProcesses;
+		this.android99permission99setPreferredApplications = android99permission99setPreferredApplications;
+		this.com99android99alarm99permission99setAlarm = com99android99alarm99permission99setAlarm;
+		this.android99permission99injectEvents = android99permission99injectEvents;
+		this.android99permission99readFrameBuffer = android99permission99readFrameBuffer;
+		this.android99permission99setAlwaysFinish = android99permission99setAlwaysFinish;
+		this.android99permission99useSip = android99permission99useSip;
+		this.android99permission99setOrientation = android99permission99setOrientation;
+		this.com99huawei99launcher399permission99readSettings = com99huawei99launcher399permission99readSettings;
+		this.android99permission99writeMediaStorage = android99permission99writeMediaStorage;
+		this.com99huawei99launcher299permission99readSettings = com99huawei99launcher299permission99readSettings;
+		this.com99qihoo36099launcher99permission99readSettings = com99qihoo36099launcher99permission99readSettings;
+		this.com99android99launcher399permission99readSettings = com99android99launcher399permission99readSettings;
+		this.com99anddoes99launcher99permission99readSettings = com99anddoes99launcher99permission99readSettings;
+		this.com99android99launcher299permission99readSettings = com99android99launcher299permission99readSettings;
+		this.android99permission99setActivityWatcher = android99permission99setActivityWatcher;
+		this.com99huawei99android99launcher99permission99readSettings = com99huawei99android99launcher99permission99readSettings;
+		this.com99bbk99launcher299permission99readSettings = com99bbk99launcher299permission99readSettings;
+		this.com99aspire99mm99permission99readSettings = com99aspire99mm99permission99readSettings;
+		this.android99permission99readSyncSettings = android99permission99readSyncSettings;
+		this.android99permission99writeSyncSettings = android99permission99writeSyncSettings;
+		this.com99qihoo36099mobilesafe99shield99permission99broadcast = com99qihoo36099mobilesafe99shield99permission99broadcast;
+		this.com99qihoo36099mobilesafe99permission99broadcast = com99qihoo36099mobilesafe99permission99broadcast;
+		this.getui99permission99getuiService = getui99permission99getuiService;
+		this.android99permission99readSettings = android99permission99readSettings;
+		this.com99hengtalk99fruitbubble99permission99jpushMessage = com99hengtalk99fruitbubble99permission99jpushMessage;
+		this.com99huawei99android99launcher99permission99writeSettings = com99huawei99android99launcher99permission99writeSettings;
+		this.com99sec99android99app99twlauncher99writeSettings = com99sec99android99app99twlauncher99writeSettings;
+		this.com99qihoo99appstore99rtservice99accessRtservice = com99qihoo99appstore99rtservice99accessRtservice;
+		this.android99permission99writeOwnerData = android99permission99writeOwnerData;
+		this.com99qihoo36099launcher99permission99writeSettings = com99qihoo36099launcher99permission99writeSettings;
+		this.com99qihoo36099home99permission99readSettings = com99qihoo36099home99permission99readSettings;
+		this.com99lenovo99launcher99permission99writeSettings = com99lenovo99launcher99permission99writeSettings;
+		this.com99sec99android99app99twlauncher99readSettings = com99sec99android99app99twlauncher99readSettings;
+		this.org99adwfreak99launcher99permission99writeSettings = org99adwfreak99launcher99permission99writeSettings;
+		this.com99nd99android99launcher99permission99readSettings = com99nd99android99launcher99permission99readSettings;
+		this.com99gau99go99launcherex99permission99writeSettings = com99gau99go99launcherex99permission99writeSettings;
+		this.com99lenovo99launcher99permission99readSettings = com99lenovo99launcher99permission99readSettings;
+		this.android99permission99accessCacheFilesystem = android99permission99accessCacheFilesystem;
+		this.com99gau99go99launcherex99permission99readSettings = com99gau99go99launcherex99permission99readSettings;
+		this.com99anddoes99launcher99permission99writeSettings = com99anddoes99launcher99permission99writeSettings;
+		this.com99android99launcher299permission99writeSettings = com99android99launcher299permission99writeSettings;
+		this.com99nd99android99launcher99permission99writeSettings = com99nd99android99launcher99permission99writeSettings;
+		this.org99adwfreak99launcher99permission99readSettings = org99adwfreak99launcher99permission99readSettings;
+		this.com99qihoo36099home99permission99writeSettings = com99qihoo36099home99permission99writeSettings;
+		this.com99hzsj99dsjy99permission99jpushMessage = com99hzsj99dsjy99permission99jpushMessage;
+		this.com99google99android99providers99gsf99permission99readGservices = com99google99android99providers99gsf99permission99readGservices;
+		this.asia99ivity99qifu99android99permission99mapsReceive = asia99ivity99qifu99android99permission99mapsReceive;
+		this.android99permission99globalSearchControl = android99permission99globalSearchControl;
+		this.android99intent99action99serviceStateChangedAction = android99intent99action99serviceStateChangedAction;
+		this.android99permission99silent = android99permission99silent;
+		this.android99intent99action99phoneState = android99intent99action99phoneState;
+		this.android99permission99forceStopPackages = android99permission99forceStopPackages;
+		this.scott99permission99myBroadcastPermission = scott99permission99myBroadcastPermission;
+		this.android99permission99readSyncStats = android99permission99readSyncStats;
+		this.android99permission99accessAgjAllDownloads = android99permission99accessAgjAllDownloads;
+		this.android99permission99accessAgjDownloadAccess = android99permission99accessAgjDownloadAccess;
+		this.android99permission99accessAgjDownloadManager = android99permission99accessAgjDownloadManager;
+		this.android99permissions99accessFineLocation = android99permissions99accessFineLocation;
+		this.andorid99permission99writeSettings = andorid99permission99writeSettings;
+		this.andorid99permission99killBackgroundProcesses = andorid99permission99killBackgroundProcesses;
+		this.android99permission99bindDeviceAdmin = android99permission99bindDeviceAdmin;
+		this.android99permission99accessFindLocation = android99permission99accessFindLocation;
+		this.android99permission99factoryTest = android99permission99factoryTest;
+		this.android99permission99internalSystemWindow = android99permission99internalSystemWindow;
+		this.android99permission99mountFormatFilesystems = android99permission99mountFormatFilesystems;
+		this.com99android99launcher99permission99wakeLock = com99android99launcher99permission99wakeLock;
+	}
+
+	// Property accessors
+	@Id
+	@GeneratedValue(strategy = IDENTITY)
+	@Column(name = "id", unique = true, nullable = false)
+	public Integer getId() {
+		return this.id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	@Column(name = "apkmd5")
+	public String getApkmd5() {
+		return this.apkmd5;
+	}
+
+	public void setApkmd5(String apkmd5) {
+		this.apkmd5 = apkmd5;
+	}
+
+	@Column(name = "android99permission99VIBRATE", length = 11)
+	public String getAndroid99permission99vibrate() {
+		return this.android99permission99vibrate;
+	}
+
+	public void setAndroid99permission99vibrate(
+			String android99permission99vibrate) {
+		this.android99permission99vibrate = android99permission99vibrate;
+	}
+
+	@Column(name = "android99permission99WRITE_APN_SETTINGS", length = 11)
+	public String getAndroid99permission99writeApnSettings() {
+		return this.android99permission99writeApnSettings;
+	}
+
+	public void setAndroid99permission99writeApnSettings(
+			String android99permission99writeApnSettings) {
+		this.android99permission99writeApnSettings = android99permission99writeApnSettings;
+	}
+
+	@Column(name = "android99permission99RECEIVE_BOOT_COMPLETED", length = 11)
+	public String getAndroid99permission99receiveBootCompleted() {
+		return this.android99permission99receiveBootCompleted;
+	}
+
+	public void setAndroid99permission99receiveBootCompleted(
+			String android99permission99receiveBootCompleted) {
+		this.android99permission99receiveBootCompleted = android99permission99receiveBootCompleted;
+	}
+
+	@Column(name = "android99permission99INTERNET", length = 11)
+	public String getAndroid99permission99internet() {
+		return this.android99permission99internet;
+	}
+
+	public void setAndroid99permission99internet(
+			String android99permission99internet) {
+		this.android99permission99internet = android99permission99internet;
+	}
+
+	@Column(name = "android99permission99DISABLE_KEYGUARD", length = 11)
+	public String getAndroid99permission99disableKeyguard() {
+		return this.android99permission99disableKeyguard;
+	}
+
+	public void setAndroid99permission99disableKeyguard(
+			String android99permission99disableKeyguard) {
+		this.android99permission99disableKeyguard = android99permission99disableKeyguard;
+	}
+
+	@Column(name = "android99permission99ACCESS_NETWORK_STATE", length = 11)
+	public String getAndroid99permission99accessNetworkState() {
+		return this.android99permission99accessNetworkState;
+	}
+
+	public void setAndroid99permission99accessNetworkState(
+			String android99permission99accessNetworkState) {
+		this.android99permission99accessNetworkState = android99permission99accessNetworkState;
+	}
+
+	@Column(name = "com99android99browser99permission99WRITE_HISTORY_BOOKMARKS", length = 11)
+	public String getCom99android99browser99permission99writeHistoryBookmarks() {
+		return this.com99android99browser99permission99writeHistoryBookmarks;
+	}
+
+	public void setCom99android99browser99permission99writeHistoryBookmarks(
+			String com99android99browser99permission99writeHistoryBookmarks) {
+		this.com99android99browser99permission99writeHistoryBookmarks = com99android99browser99permission99writeHistoryBookmarks;
+	}
+
+	@Column(name = "android99permission99READ_PHONE_STATE", length = 11)
+	public String getAndroid99permission99readPhoneState() {
+		return this.android99permission99readPhoneState;
+	}
+
+	public void setAndroid99permission99readPhoneState(
+			String android99permission99readPhoneState) {
+		this.android99permission99readPhoneState = android99permission99readPhoneState;
+	}
+
+	@Column(name = "com99android99browser99permission99READ_HISTORY_BOOKMARKS", length = 11)
+	public String getCom99android99browser99permission99readHistoryBookmarks() {
+		return this.com99android99browser99permission99readHistoryBookmarks;
+	}
+
+	public void setCom99android99browser99permission99readHistoryBookmarks(
+			String com99android99browser99permission99readHistoryBookmarks) {
+		this.com99android99browser99permission99readHistoryBookmarks = com99android99browser99permission99readHistoryBookmarks;
+	}
+
+	@Column(name = "android99permission99WRITE_EXTERNAL_STORAGE", length = 11)
+	public String getAndroid99permission99writeExternalStorage() {
+		return this.android99permission99writeExternalStorage;
+	}
+
+	public void setAndroid99permission99writeExternalStorage(
+			String android99permission99writeExternalStorage) {
+		this.android99permission99writeExternalStorage = android99permission99writeExternalStorage;
+	}
+
+	@Column(name = "android99permission99MODIFY_PHONE_STATE", length = 11)
+	public String getAndroid99permission99modifyPhoneState() {
+		return this.android99permission99modifyPhoneState;
+	}
+
+	public void setAndroid99permission99modifyPhoneState(
+			String android99permission99modifyPhoneState) {
+		this.android99permission99modifyPhoneState = android99permission99modifyPhoneState;
+	}
+
+	@Column(name = "android99permission99ACCESS_FINE_LOCATION", length = 11)
+	public String getAndroid99permission99accessFineLocation() {
+		return this.android99permission99accessFineLocation;
+	}
+
+	public void setAndroid99permission99accessFineLocation(
+			String android99permission99accessFineLocation) {
+		this.android99permission99accessFineLocation = android99permission99accessFineLocation;
+	}
+
+	@Column(name = "android99permission99SYSTEM_OVERLAY_WINDOW", length = 11)
+	public String getAndroid99permission99systemOverlayWindow() {
+		return this.android99permission99systemOverlayWindow;
+	}
+
+	public void setAndroid99permission99systemOverlayWindow(
+			String android99permission99systemOverlayWindow) {
+		this.android99permission99systemOverlayWindow = android99permission99systemOverlayWindow;
+	}
+
+	@Column(name = "android99permission99SYSTEM_ALERT_WINDOW", length = 11)
+	public String getAndroid99permission99systemAlertWindow() {
+		return this.android99permission99systemAlertWindow;
+	}
+
+	public void setAndroid99permission99systemAlertWindow(
+			String android99permission99systemAlertWindow) {
+		this.android99permission99systemAlertWindow = android99permission99systemAlertWindow;
+	}
+
+	@Column(name = "com99android99launcher99permission99INSTALL_SHORTCUT", length = 11)
+	public String getCom99android99launcher99permission99installShortcut() {
+		return this.com99android99launcher99permission99installShortcut;
+	}
+
+	public void setCom99android99launcher99permission99installShortcut(
+			String com99android99launcher99permission99installShortcut) {
+		this.com99android99launcher99permission99installShortcut = com99android99launcher99permission99installShortcut;
+	}
+
+	@Column(name = "android99permission99READ_LOGS", length = 11)
+	public String getAndroid99permission99readLogs() {
+		return this.android99permission99readLogs;
+	}
+
+	public void setAndroid99permission99readLogs(
+			String android99permission99readLogs) {
+		this.android99permission99readLogs = android99permission99readLogs;
+	}
+
+	@Column(name = "android99permission99ACCESS_WIFI_STATE", length = 11)
+	public String getAndroid99permission99accessWifiState() {
+		return this.android99permission99accessWifiState;
+	}
+
+	public void setAndroid99permission99accessWifiState(
+			String android99permission99accessWifiState) {
+		this.android99permission99accessWifiState = android99permission99accessWifiState;
+	}
+
+	@Column(name = "android99permission99ACCESS_COARSE_LOCATION", length = 11)
+	public String getAndroid99permission99accessCoarseLocation() {
+		return this.android99permission99accessCoarseLocation;
+	}
+
+	public void setAndroid99permission99accessCoarseLocation(
+			String android99permission99accessCoarseLocation) {
+		this.android99permission99accessCoarseLocation = android99permission99accessCoarseLocation;
+	}
+
+	@Column(name = "android99permission99WAKE_LOCK", length = 11)
+	public String getAndroid99permission99wakeLock() {
+		return this.android99permission99wakeLock;
+	}
+
+	public void setAndroid99permission99wakeLock(
+			String android99permission99wakeLock) {
+		this.android99permission99wakeLock = android99permission99wakeLock;
+	}
+
+	@Column(name = "android99permission99GET_TASKS", length = 11)
+	public String getAndroid99permission99getTasks() {
+		return this.android99permission99getTasks;
+	}
+
+	public void setAndroid99permission99getTasks(
+			String android99permission99getTasks) {
+		this.android99permission99getTasks = android99permission99getTasks;
+	}
+
+	@Column(name = "android99permission99ACCESS_DOWNLOAD_MANAGER", length = 11)
+	public String getAndroid99permission99accessDownloadManager() {
+		return this.android99permission99accessDownloadManager;
+	}
+
+	public void setAndroid99permission99accessDownloadManager(
+			String android99permission99accessDownloadManager) {
+		this.android99permission99accessDownloadManager = android99permission99accessDownloadManager;
+	}
+
+	@Column(name = "com99android99launcher99permission99READ_SETTINGS", length = 11)
+	public String getCom99android99launcher99permission99readSettings() {
+		return this.com99android99launcher99permission99readSettings;
+	}
+
+	public void setCom99android99launcher99permission99readSettings(
+			String com99android99launcher99permission99readSettings) {
+		this.com99android99launcher99permission99readSettings = com99android99launcher99permission99readSettings;
+	}
+
+	@Column(name = "com99android99launcher99permission99WRITE_SETTINGS", length = 11)
+	public String getCom99android99launcher99permission99writeSettings() {
+		return this.com99android99launcher99permission99writeSettings;
+	}
+
+	public void setCom99android99launcher99permission99writeSettings(
+			String com99android99launcher99permission99writeSettings) {
+		this.com99android99launcher99permission99writeSettings = com99android99launcher99permission99writeSettings;
+	}
+
+	@Column(name = "android99permission99CAMERA", length = 11)
+	public String getAndroid99permission99camera() {
+		return this.android99permission99camera;
+	}
+
+	public void setAndroid99permission99camera(
+			String android99permission99camera) {
+		this.android99permission99camera = android99permission99camera;
+	}
+
+	@Column(name = "android99permission99WRITE_SMS", length = 11)
+	public String getAndroid99permission99writeSms() {
+		return this.android99permission99writeSms;
+	}
+
+	public void setAndroid99permission99writeSms(
+			String android99permission99writeSms) {
+		this.android99permission99writeSms = android99permission99writeSms;
+	}
+
+	@Column(name = "android99permission99RECEIVE_SMS", length = 11)
+	public String getAndroid99permission99receiveSms() {
+		return this.android99permission99receiveSms;
+	}
+
+	public void setAndroid99permission99receiveSms(
+			String android99permission99receiveSms) {
+		this.android99permission99receiveSms = android99permission99receiveSms;
+	}
+
+	@Column(name = "android99permission99READ_SMS", length = 11)
+	public String getAndroid99permission99readSms() {
+		return this.android99permission99readSms;
+	}
+
+	public void setAndroid99permission99readSms(
+			String android99permission99readSms) {
+		this.android99permission99readSms = android99permission99readSms;
+	}
+
+	@Column(name = "android99permission99RESTART_PACKAGES", length = 11)
+	public String getAndroid99permission99restartPackages() {
+		return this.android99permission99restartPackages;
+	}
+
+	public void setAndroid99permission99restartPackages(
+			String android99permission99restartPackages) {
+		this.android99permission99restartPackages = android99permission99restartPackages;
+	}
+
+	@Column(name = "android99permission99SEND_SMS", length = 11)
+	public String getAndroid99permission99sendSms() {
+		return this.android99permission99sendSms;
+	}
+
+	public void setAndroid99permission99sendSms(
+			String android99permission99sendSms) {
+		this.android99permission99sendSms = android99permission99sendSms;
+	}
+
+	@Column(name = "android99permission99RECEIVE_USER_PRESENT", length = 11)
+	public String getAndroid99permission99receiveUserPresent() {
+		return this.android99permission99receiveUserPresent;
+	}
+
+	public void setAndroid99permission99receiveUserPresent(
+			String android99permission99receiveUserPresent) {
+		this.android99permission99receiveUserPresent = android99permission99receiveUserPresent;
+	}
+
+	@Column(name = "android99permission99BROADCAST_SMS", length = 11)
+	public String getAndroid99permission99broadcastSms() {
+		return this.android99permission99broadcastSms;
+	}
+
+	public void setAndroid99permission99broadcastSms(
+			String android99permission99broadcastSms) {
+		this.android99permission99broadcastSms = android99permission99broadcastSms;
+	}
+
+	@Column(name = "android99permission99READ_CONTACTS", length = 11)
+	public String getAndroid99permission99readContacts() {
+		return this.android99permission99readContacts;
+	}
+
+	public void setAndroid99permission99readContacts(
+			String android99permission99readContacts) {
+		this.android99permission99readContacts = android99permission99readContacts;
+	}
+
+	@Column(name = "android99permission99CHANGE_NETWORK_STATE", length = 11)
+	public String getAndroid99permission99changeNetworkState() {
+		return this.android99permission99changeNetworkState;
+	}
+
+	public void setAndroid99permission99changeNetworkState(
+			String android99permission99changeNetworkState) {
+		this.android99permission99changeNetworkState = android99permission99changeNetworkState;
+	}
+
+	@Column(name = "android99permission99WRITE_SETTINGS", length = 11)
+	public String getAndroid99permission99writeSettings() {
+		return this.android99permission99writeSettings;
+	}
+
+	public void setAndroid99permission99writeSettings(
+			String android99permission99writeSettings) {
+		this.android99permission99writeSettings = android99permission99writeSettings;
+	}
+
+	@Column(name = "android99permission99CALL_PHONE", length = 11)
+	public String getAndroid99permission99callPhone() {
+		return this.android99permission99callPhone;
+	}
+
+	public void setAndroid99permission99callPhone(
+			String android99permission99callPhone) {
+		this.android99permission99callPhone = android99permission99callPhone;
+	}
+
+	@Column(name = "android99permission99PROCESS_OUTGOING_CALLS", length = 11)
+	public String getAndroid99permission99processOutgoingCalls() {
+		return this.android99permission99processOutgoingCalls;
+	}
+
+	public void setAndroid99permission99processOutgoingCalls(
+			String android99permission99processOutgoingCalls) {
+		this.android99permission99processOutgoingCalls = android99permission99processOutgoingCalls;
+	}
+
+	@Column(name = "android99permission99WRITE_CALL_LOG", length = 11)
+	public String getAndroid99permission99writeCallLog() {
+		return this.android99permission99writeCallLog;
+	}
+
+	public void setAndroid99permission99writeCallLog(
+			String android99permission99writeCallLog) {
+		this.android99permission99writeCallLog = android99permission99writeCallLog;
+	}
+
+	@Column(name = "android99permission99READ_CALL_LOG", length = 11)
+	public String getAndroid99permission99readCallLog() {
+		return this.android99permission99readCallLog;
+	}
+
+	public void setAndroid99permission99readCallLog(
+			String android99permission99readCallLog) {
+		this.android99permission99readCallLog = android99permission99readCallLog;
+	}
+
+	@Column(name = "android99permission99CHANGE_WIFI_STATE", length = 11)
+	public String getAndroid99permission99changeWifiState() {
+		return this.android99permission99changeWifiState;
+	}
+
+	public void setAndroid99permission99changeWifiState(
+			String android99permission99changeWifiState) {
+		this.android99permission99changeWifiState = android99permission99changeWifiState;
+	}
+
+	@Column(name = "android99permission99MOUNT_UNMOUNT_FILESYSTEMS", length = 11)
+	public String getAndroid99permission99mountUnmountFilesystems() {
+		return this.android99permission99mountUnmountFilesystems;
+	}
+
+	public void setAndroid99permission99mountUnmountFilesystems(
+			String android99permission99mountUnmountFilesystems) {
+		this.android99permission99mountUnmountFilesystems = android99permission99mountUnmountFilesystems;
+	}
+
+	@Column(name = "com99android99launcher99permission99UNINSTALL_SHORTCUT", length = 11)
+	public String getCom99android99launcher99permission99uninstallShortcut() {
+		return this.com99android99launcher99permission99uninstallShortcut;
+	}
+
+	public void setCom99android99launcher99permission99uninstallShortcut(
+			String com99android99launcher99permission99uninstallShortcut) {
+		this.com99android99launcher99permission99uninstallShortcut = com99android99launcher99permission99uninstallShortcut;
+	}
+
+	@Column(name = "android99permission99ACCES_MOCK_LOCATION", length = 11)
+	public String getAndroid99permission99accesMockLocation() {
+		return this.android99permission99accesMockLocation;
+	}
+
+	public void setAndroid99permission99accesMockLocation(
+			String android99permission99accesMockLocation) {
+		this.android99permission99accesMockLocation = android99permission99accesMockLocation;
+	}
+
+	@Column(name = "android99permission99RECEIVE_WAP_PUSH", length = 11)
+	public String getAndroid99permission99receiveWapPush() {
+		return this.android99permission99receiveWapPush;
+	}
+
+	public void setAndroid99permission99receiveWapPush(
+			String android99permission99receiveWapPush) {
+		this.android99permission99receiveWapPush = android99permission99receiveWapPush;
+	}
+
+	@Column(name = "android99permission99SET_WALLPAPER", length = 11)
+	public String getAndroid99permission99setWallpaper() {
+		return this.android99permission99setWallpaper;
+	}
+
+	public void setAndroid99permission99setWallpaper(
+			String android99permission99setWallpaper) {
+		this.android99permission99setWallpaper = android99permission99setWallpaper;
+	}
+
+	@Column(name = "android99permission99BAIDU_LOCATION_SERVICE", length = 11)
+	public String getAndroid99permission99baiduLocationService() {
+		return this.android99permission99baiduLocationService;
+	}
+
+	public void setAndroid99permission99baiduLocationService(
+			String android99permission99baiduLocationService) {
+		this.android99permission99baiduLocationService = android99permission99baiduLocationService;
+	}
+
+	@Column(name = "android99permission99RECORD_VIDEO", length = 11)
+	public String getAndroid99permission99recordVideo() {
+		return this.android99permission99recordVideo;
+	}
+
+	public void setAndroid99permission99recordVideo(
+			String android99permission99recordVideo) {
+		this.android99permission99recordVideo = android99permission99recordVideo;
+	}
+
+	@Column(name = "android99permission99ACCESS_LOCATION_EXTRA_COMMANDS", length = 11)
+	public String getAndroid99permission99accessLocationExtraCommands() {
+		return this.android99permission99accessLocationExtraCommands;
+	}
+
+	public void setAndroid99permission99accessLocationExtraCommands(
+			String android99permission99accessLocationExtraCommands) {
+		this.android99permission99accessLocationExtraCommands = android99permission99accessLocationExtraCommands;
+	}
+
+	@Column(name = "android99permission99CLEAR_APP_CACHE", length = 11)
+	public String getAndroid99permission99clearAppCache() {
+		return this.android99permission99clearAppCache;
+	}
+
+	public void setAndroid99permission99clearAppCache(
+			String android99permission99clearAppCache) {
+		this.android99permission99clearAppCache = android99permission99clearAppCache;
+	}
+
+	@Column(name = "android99permission99READ_CALENDAR", length = 11)
+	public String getAndroid99permission99readCalendar() {
+		return this.android99permission99readCalendar;
+	}
+
+	public void setAndroid99permission99readCalendar(
+			String android99permission99readCalendar) {
+		this.android99permission99readCalendar = android99permission99readCalendar;
+	}
+
+	@Column(name = "android99permission99WRITE_CONTACTS", length = 11)
+	public String getAndroid99permission99writeContacts() {
+		return this.android99permission99writeContacts;
+	}
+
+	public void setAndroid99permission99writeContacts(
+			String android99permission99writeContacts) {
+		this.android99permission99writeContacts = android99permission99writeContacts;
+	}
+
+	@Column(name = "android99permission99UPDATE_APP_OPS_STATS", length = 11)
+	public String getAndroid99permission99updateAppOpsStats() {
+		return this.android99permission99updateAppOpsStats;
+	}
+
+	public void setAndroid99permission99updateAppOpsStats(
+			String android99permission99updateAppOpsStats) {
+		this.android99permission99updateAppOpsStats = android99permission99updateAppOpsStats;
+	}
+
+	@Column(name = "android99permission99KILL_BACKGROUND_PROCESSES", length = 11)
+	public String getAndroid99permission99killBackgroundProcesses() {
+		return this.android99permission99killBackgroundProcesses;
+	}
+
+	public void setAndroid99permission99killBackgroundProcesses(
+			String android99permission99killBackgroundProcesses) {
+		this.android99permission99killBackgroundProcesses = android99permission99killBackgroundProcesses;
+	}
+
+	@Column(name = "android99permission99INSTALL_PACKAGES", length = 11)
+	public String getAndroid99permission99installPackages() {
+		return this.android99permission99installPackages;
+	}
+
+	public void setAndroid99permission99installPackages(
+			String android99permission99installPackages) {
+		this.android99permission99installPackages = android99permission99installPackages;
+	}
+
+	@Column(name = "android99permission99READ_EXTERNAL_STORAGE", length = 11)
+	public String getAndroid99permission99readExternalStorage() {
+		return this.android99permission99readExternalStorage;
+	}
+
+	public void setAndroid99permission99readExternalStorage(
+			String android99permission99readExternalStorage) {
+		this.android99permission99readExternalStorage = android99permission99readExternalStorage;
+	}
+
+	@Column(name = "android99permission99DELETE_PACKAGES", length = 11)
+	public String getAndroid99permission99deletePackages() {
+		return this.android99permission99deletePackages;
+	}
+
+	public void setAndroid99permission99deletePackages(
+			String android99permission99deletePackages) {
+		this.android99permission99deletePackages = android99permission99deletePackages;
+	}
+
+	@Column(name = "android99permission99CHANGE_COMPONENT_ENABLED_STATE", length = 11)
+	public String getAndroid99permission99changeComponentEnabledState() {
+		return this.android99permission99changeComponentEnabledState;
+	}
+
+	public void setAndroid99permission99changeComponentEnabledState(
+			String android99permission99changeComponentEnabledState) {
+		this.android99permission99changeComponentEnabledState = android99permission99changeComponentEnabledState;
+	}
+
+	@Column(name = "android99permission99REBOOT", length = 11)
+	public String getAndroid99permission99reboot() {
+		return this.android99permission99reboot;
+	}
+
+	public void setAndroid99permission99reboot(
+			String android99permission99reboot) {
+		this.android99permission99reboot = android99permission99reboot;
+	}
+
+	@Column(name = "android99permission99RECORD_AUDIO", length = 11)
+	public String getAndroid99permission99recordAudio() {
+		return this.android99permission99recordAudio;
+	}
+
+	public void setAndroid99permission99recordAudio(
+			String android99permission99recordAudio) {
+		this.android99permission99recordAudio = android99permission99recordAudio;
+	}
+
+	@Column(name = "android99permission99DEVICE_POWER", length = 11)
+	public String getAndroid99permission99devicePower() {
+		return this.android99permission99devicePower;
+	}
+
+	public void setAndroid99permission99devicePower(
+			String android99permission99devicePower) {
+		this.android99permission99devicePower = android99permission99devicePower;
+	}
+
+	@Column(name = "android99permission99BLUETOOTH", length = 11)
+	public String getAndroid99permission99bluetooth() {
+		return this.android99permission99bluetooth;
+	}
+
+	public void setAndroid99permission99bluetooth(
+			String android99permission99bluetooth) {
+		this.android99permission99bluetooth = android99permission99bluetooth;
+	}
+
+	@Column(name = "android99permission99REORDER_TASKS", length = 11)
+	public String getAndroid99permission99reorderTasks() {
+		return this.android99permission99reorderTasks;
+	}
+
+	public void setAndroid99permission99reorderTasks(
+			String android99permission99reorderTasks) {
+		this.android99permission99reorderTasks = android99permission99reorderTasks;
+	}
+
+	@Column(name = "android99permission99MANAGE_ACCOUNTS", length = 11)
+	public String getAndroid99permission99manageAccounts() {
+		return this.android99permission99manageAccounts;
+	}
+
+	public void setAndroid99permission99manageAccounts(
+			String android99permission99manageAccounts) {
+		this.android99permission99manageAccounts = android99permission99manageAccounts;
+	}
+
+	@Column(name = "android99permission99AUTHENTICATE_ACCOUNTS", length = 11)
+	public String getAndroid99permission99authenticateAccounts() {
+		return this.android99permission99authenticateAccounts;
+	}
+
+	public void setAndroid99permission99authenticateAccounts(
+			String android99permission99authenticateAccounts) {
+		this.android99permission99authenticateAccounts = android99permission99authenticateAccounts;
+	}
+
+	@Column(name = "android99permission99BROADCAST_STICKY", length = 11)
+	public String getAndroid99permission99broadcastSticky() {
+		return this.android99permission99broadcastSticky;
+	}
+
+	public void setAndroid99permission99broadcastSticky(
+			String android99permission99broadcastSticky) {
+		this.android99permission99broadcastSticky = android99permission99broadcastSticky;
+	}
+
+	@Column(name = "android99permission99MODIFY_AUDIO_SETTINGS", length = 11)
+	public String getAndroid99permission99modifyAudioSettings() {
+		return this.android99permission99modifyAudioSettings;
+	}
+
+	public void setAndroid99permission99modifyAudioSettings(
+			String android99permission99modifyAudioSettings) {
+		this.android99permission99modifyAudioSettings = android99permission99modifyAudioSettings;
+	}
+
+	@Column(name = "android99permission99GET_ACCOUNTS", length = 11)
+	public String getAndroid99permission99getAccounts() {
+		return this.android99permission99getAccounts;
+	}
+
+	public void setAndroid99permission99getAccounts(
+			String android99permission99getAccounts) {
+		this.android99permission99getAccounts = android99permission99getAccounts;
+	}
+
+	@Column(name = "net99cellagent99permission99C2D_MESSAGE", length = 11)
+	public String getNet99cellagent99permission99c2dMessage() {
+		return this.net99cellagent99permission99c2dMessage;
+	}
+
+	public void setNet99cellagent99permission99c2dMessage(
+			String net99cellagent99permission99c2dMessage) {
+		this.net99cellagent99permission99c2dMessage = net99cellagent99permission99c2dMessage;
+	}
+
+	@Column(name = "com99google99android99c2dm99permission99RECEIVE", length = 11)
+	public String getCom99google99android99c2dm99permission99receive() {
+		return this.com99google99android99c2dm99permission99receive;
+	}
+
+	public void setCom99google99android99c2dm99permission99receive(
+			String com99google99android99c2dm99permission99receive) {
+		this.com99google99android99c2dm99permission99receive = com99google99android99c2dm99permission99receive;
+	}
+
+	@Column(name = "com99motorola99dlauncher99permission99READ_SETTINGS", length = 11)
+	public String getCom99motorola99dlauncher99permission99readSettings() {
+		return this.com99motorola99dlauncher99permission99readSettings;
+	}
+
+	public void setCom99motorola99dlauncher99permission99readSettings(
+			String com99motorola99dlauncher99permission99readSettings) {
+		this.com99motorola99dlauncher99permission99readSettings = com99motorola99dlauncher99permission99readSettings;
+	}
+
+	@Column(name = "com99motorola99dlauncher99permission99INSTALL_SHORTCUT", length = 11)
+	public String getCom99motorola99dlauncher99permission99installShortcut() {
+		return this.com99motorola99dlauncher99permission99installShortcut;
+	}
+
+	public void setCom99motorola99dlauncher99permission99installShortcut(
+			String com99motorola99dlauncher99permission99installShortcut) {
+		this.com99motorola99dlauncher99permission99installShortcut = com99motorola99dlauncher99permission99installShortcut;
+	}
+
+	@Column(name = "com99htc99launcher99permission99READ_SETTINGS", length = 11)
+	public String getCom99htc99launcher99permission99readSettings() {
+		return this.com99htc99launcher99permission99readSettings;
+	}
+
+	public void setCom99htc99launcher99permission99readSettings(
+			String com99htc99launcher99permission99readSettings) {
+		this.com99htc99launcher99permission99readSettings = com99htc99launcher99permission99readSettings;
+	}
+
+	@Column(name = "com99lge99launcher99permission99INSTALL_SHORTCUT", length = 11)
+	public String getCom99lge99launcher99permission99installShortcut() {
+		return this.com99lge99launcher99permission99installShortcut;
+	}
+
+	public void setCom99lge99launcher99permission99installShortcut(
+			String com99lge99launcher99permission99installShortcut) {
+		this.com99lge99launcher99permission99installShortcut = com99lge99launcher99permission99installShortcut;
+	}
+
+	@Column(name = "com99motorola99launcher99permission99READ_SETTINGS", length = 11)
+	public String getCom99motorola99launcher99permission99readSettings() {
+		return this.com99motorola99launcher99permission99readSettings;
+	}
+
+	public void setCom99motorola99launcher99permission99readSettings(
+			String com99motorola99launcher99permission99readSettings) {
+		this.com99motorola99launcher99permission99readSettings = com99motorola99launcher99permission99readSettings;
+	}
+
+	@Column(name = "com99motorola99launcher99permission99INSTALL_SHORTCUT", length = 11)
+	public String getCom99motorola99launcher99permission99installShortcut() {
+		return this.com99motorola99launcher99permission99installShortcut;
+	}
+
+	public void setCom99motorola99launcher99permission99installShortcut(
+			String com99motorola99launcher99permission99installShortcut) {
+		this.com99motorola99launcher99permission99installShortcut = com99motorola99launcher99permission99installShortcut;
+	}
+
+	@Column(name = "com99fede99launcher99permission99READ_SETTINGS", length = 11)
+	public String getCom99fede99launcher99permission99readSettings() {
+		return this.com99fede99launcher99permission99readSettings;
+	}
+
+	public void setCom99fede99launcher99permission99readSettings(
+			String com99fede99launcher99permission99readSettings) {
+		this.com99fede99launcher99permission99readSettings = com99fede99launcher99permission99readSettings;
+	}
+
+	@Column(name = "org99adw99launcher99permission99READ_SETTINGS", length = 11)
+	public String getOrg99adw99launcher99permission99readSettings() {
+		return this.org99adw99launcher99permission99readSettings;
+	}
+
+	public void setOrg99adw99launcher99permission99readSettings(
+			String org99adw99launcher99permission99readSettings) {
+		this.org99adw99launcher99permission99readSettings = org99adw99launcher99permission99readSettings;
+	}
+
+	@Column(name = "com99lge99launcher99permission99READ_SETTINGS", length = 11)
+	public String getCom99lge99launcher99permission99readSettings() {
+		return this.com99lge99launcher99permission99readSettings;
+	}
+
+	public void setCom99lge99launcher99permission99readSettings(
+			String com99lge99launcher99permission99readSettings) {
+		this.com99lge99launcher99permission99readSettings = com99lge99launcher99permission99readSettings;
+	}
+
+	@Column(name = "android99permission99GET_PACKAGE_SIZE", length = 11)
+	public String getAndroid99permission99getPackageSize() {
+		return this.android99permission99getPackageSize;
+	}
+
+	public void setAndroid99permission99getPackageSize(
+			String android99permission99getPackageSize) {
+		this.android99permission99getPackageSize = android99permission99getPackageSize;
+	}
+
+	@Column(name = "android99permission99RECEIVE_MMS", length = 11)
+	public String getAndroid99permission99receiveMms() {
+		return this.android99permission99receiveMms;
+	}
+
+	public void setAndroid99permission99receiveMms(
+			String android99permission99receiveMms) {
+		this.android99permission99receiveMms = android99permission99receiveMms;
+	}
+
+	@Column(name = "com99neverlostmydroid99permission99C2D_MESSAGE", length = 11)
+	public String getCom99neverlostmydroid99permission99c2dMessage() {
+		return this.com99neverlostmydroid99permission99c2dMessage;
+	}
+
+	public void setCom99neverlostmydroid99permission99c2dMessage(
+			String com99neverlostmydroid99permission99c2dMessage) {
+		this.com99neverlostmydroid99permission99c2dMessage = com99neverlostmydroid99permission99c2dMessage;
+	}
+
+	@Column(name = "android99permission99DOWNLOAD_WITHOUT_NOTIFICATION", length = 11)
+	public String getAndroid99permission99downloadWithoutNotification() {
+		return this.android99permission99downloadWithoutNotification;
+	}
+
+	public void setAndroid99permission99downloadWithoutNotification(
+			String android99permission99downloadWithoutNotification) {
+		this.android99permission99downloadWithoutNotification = android99permission99downloadWithoutNotification;
+	}
+
+	@Column(name = "android99permission99ACCESS_COARSE_UPDATES", length = 11)
+	public String getAndroid99permission99accessCoarseUpdates() {
+		return this.android99permission99accessCoarseUpdates;
+	}
+
+	public void setAndroid99permission99accessCoarseUpdates(
+			String android99permission99accessCoarseUpdates) {
+		this.android99permission99accessCoarseUpdates = android99permission99accessCoarseUpdates;
+	}
+
+	@Column(name = "android99permission99PERMISSION_NAME", length = 11)
+	public String getAndroid99permission99permissionName() {
+		return this.android99permission99permissionName;
+	}
+
+	public void setAndroid99permission99permissionName(
+			String android99permission99permissionName) {
+		this.android99permission99permissionName = android99permission99permissionName;
+	}
+
+	@Column(name = "android99permission99FLASHLIGHT", length = 11)
+	public String getAndroid99permission99flashlight() {
+		return this.android99permission99flashlight;
+	}
+
+	public void setAndroid99permission99flashlight(
+			String android99permission99flashlight) {
+		this.android99permission99flashlight = android99permission99flashlight;
+	}
+
+	@Column(name = "android99permission99ASSESS_PHONE_STATE", length = 11)
+	public String getAndroid99permission99assessPhoneState() {
+		return this.android99permission99assessPhoneState;
+	}
+
+	public void setAndroid99permission99assessPhoneState(
+			String android99permission99assessPhoneState) {
+		this.android99permission99assessPhoneState = android99permission99assessPhoneState;
+	}
+
+	@Column(name = "android99permission99PACKAGE_USAGE_STATS", length = 11)
+	public String getAndroid99permission99packageUsageStats() {
+		return this.android99permission99packageUsageStats;
+	}
+
+	public void setAndroid99permission99packageUsageStats(
+			String android99permission99packageUsageStats) {
+		this.android99permission99packageUsageStats = android99permission99packageUsageStats;
+	}
+
+	@Column(name = "android99permission99READ_APN_SETTINGS", length = 11)
+	public String getAndroid99permission99readApnSettings() {
+		return this.android99permission99readApnSettings;
+	}
+
+	public void setAndroid99permission99readApnSettings(
+			String android99permission99readApnSettings) {
+		this.android99permission99readApnSettings = android99permission99readApnSettings;
+	}
+
+	@Column(name = "android99permission99CLEAR_APP_USER_DATA", length = 11)
+	public String getAndroid99permission99clearAppUserData() {
+		return this.android99permission99clearAppUserData;
+	}
+
+	public void setAndroid99permission99clearAppUserData(
+			String android99permission99clearAppUserData) {
+		this.android99permission99clearAppUserData = android99permission99clearAppUserData;
+	}
+
+	@Column(name = "rockchip99permission99FULL_SCREEN", length = 11)
+	public String getRockchip99permission99fullScreen() {
+		return this.rockchip99permission99fullScreen;
+	}
+
+	public void setRockchip99permission99fullScreen(
+			String rockchip99permission99fullScreen) {
+		this.rockchip99permission99fullScreen = rockchip99permission99fullScreen;
+	}
+
+	@Column(name = "android99permission99ACCESS_LOCATION", length = 11)
+	public String getAndroid99permission99accessLocation() {
+		return this.android99permission99accessLocation;
+	}
+
+	public void setAndroid99permission99accessLocation(
+			String android99permission99accessLocation) {
+		this.android99permission99accessLocation = android99permission99accessLocation;
+	}
+
+	@Column(name = "android99permission99READ_MMS", length = 11)
+	public String getAndroid99permission99readMms() {
+		return this.android99permission99readMms;
+	}
+
+	public void setAndroid99permission99readMms(
+			String android99permission99readMms) {
+		this.android99permission99readMms = android99permission99readMms;
+	}
+
+	@Column(name = "android99permission99ACCESS_CELL_ID", length = 11)
+	public String getAndroid99permission99accessCellId() {
+		return this.android99permission99accessCellId;
+	}
+
+	public void setAndroid99permission99accessCellId(
+			String android99permission99accessCellId) {
+		this.android99permission99accessCellId = android99permission99accessCellId;
+	}
+
+	@Column(name = "android99permission99ACCESS_ASSISTED_GPS", length = 11)
+	public String getAndroid99permission99accessAssistedGps() {
+		return this.android99permission99accessAssistedGps;
+	}
+
+	public void setAndroid99permission99accessAssistedGps(
+			String android99permission99accessAssistedGps) {
+		this.android99permission99accessAssistedGps = android99permission99accessAssistedGps;
+	}
+
+	@Column(name = "android99permission99ACCESS_GPS", length = 11)
+	public String getAndroid99permission99accessGps() {
+		return this.android99permission99accessGps;
+	}
+
+	public void setAndroid99permission99accessGps(
+			String android99permission99accessGps) {
+		this.android99permission99accessGps = android99permission99accessGps;
+	}
+
+	@Column(name = "android99permission99WIFI_LOCK", length = 11)
+	public String getAndroid99permission99wifiLock() {
+		return this.android99permission99wifiLock;
+	}
+
+	public void setAndroid99permission99wifiLock(
+			String android99permission99wifiLock) {
+		this.android99permission99wifiLock = android99permission99wifiLock;
+	}
+
+	@Column(name = "android99permission99HARDWARE_TEST", length = 11)
+	public String getAndroid99permission99hardwareTest() {
+		return this.android99permission99hardwareTest;
+	}
+
+	public void setAndroid99permission99hardwareTest(
+			String android99permission99hardwareTest) {
+		this.android99permission99hardwareTest = android99permission99hardwareTest;
+	}
+
+	@Column(name = "android99permission99ACCESS_MOCK_LOCATION", length = 11)
+	public String getAndroid99permission99accessMockLocation() {
+		return this.android99permission99accessMockLocation;
+	}
+
+	public void setAndroid99permission99accessMockLocation(
+			String android99permission99accessMockLocation) {
+		this.android99permission99accessMockLocation = android99permission99accessMockLocation;
+	}
+
+	@Column(name = "android99permission99BLUETOOTH_ADMIN", length = 11)
+	public String getAndroid99permission99bluetoothAdmin() {
+		return this.android99permission99bluetoothAdmin;
+	}
+
+	public void setAndroid99permission99bluetoothAdmin(
+			String android99permission99bluetoothAdmin) {
+		this.android99permission99bluetoothAdmin = android99permission99bluetoothAdmin;
+	}
+
+	@Column(name = "android99permission99EXPAND_STATUS_BAR", length = 11)
+	public String getAndroid99permission99expandStatusBar() {
+		return this.android99permission99expandStatusBar;
+	}
+
+	public void setAndroid99permission99expandStatusBar(
+			String android99permission99expandStatusBar) {
+		this.android99permission99expandStatusBar = android99permission99expandStatusBar;
+	}
+
+	@Column(name = "android99permission99UPDATE_DEVICE_STATS", length = 11)
+	public String getAndroid99permission99updateDeviceStats() {
+		return this.android99permission99updateDeviceStats;
+	}
+
+	public void setAndroid99permission99updateDeviceStats(
+			String android99permission99updateDeviceStats) {
+		this.android99permission99updateDeviceStats = android99permission99updateDeviceStats;
+	}
+
+	@Column(name = "android99permission99CHANGE_CONFIGURATION", length = 11)
+	public String getAndroid99permission99changeConfiguration() {
+		return this.android99permission99changeConfiguration;
+	}
+
+	public void setAndroid99permission99changeConfiguration(
+			String android99permission99changeConfiguration) {
+		this.android99permission99changeConfiguration = android99permission99changeConfiguration;
+	}
+
+	@Column(name = "android99permission99WRITE_SECURE_SETTINGS", length = 11)
+	public String getAndroid99permission99writeSecureSettings() {
+		return this.android99permission99writeSecureSettings;
+	}
+
+	public void setAndroid99permission99writeSecureSettings(
+			String android99permission99writeSecureSettings) {
+		this.android99permission99writeSecureSettings = android99permission99writeSecureSettings;
+	}
+
+	@Column(name = "android99permission99RUN_INSTRUMENTATION", length = 11)
+	public String getAndroid99permission99runInstrumentation() {
+		return this.android99permission99runInstrumentation;
+	}
+
+	public void setAndroid99permission99runInstrumentation(
+			String android99permission99runInstrumentation) {
+		this.android99permission99runInstrumentation = android99permission99runInstrumentation;
+	}
+
+	@Column(name = "android99permission99PHONE_STATE", length = 11)
+	public String getAndroid99permission99phoneState() {
+		return this.android99permission99phoneState;
+	}
+
+	public void setAndroid99permission99phoneState(
+			String android99permission99phoneState) {
+		this.android99permission99phoneState = android99permission99phoneState;
+	}
+
+	@Column(name = "android99permission99BATTERY_STATS", length = 11)
+	public String getAndroid99permission99batteryStats() {
+		return this.android99permission99batteryStats;
+	}
+
+	public void setAndroid99permission99batteryStats(
+			String android99permission99batteryStats) {
+		this.android99permission99batteryStats = android99permission99batteryStats;
+	}
+
+	@Column(name = "com99android99XWLauncher99permission99READ_SETTINGS", length = 11)
+	public String getCom99android99xwlauncher99permission99readSettings() {
+		return this.com99android99xwlauncher99permission99readSettings;
+	}
+
+	public void setCom99android99xwlauncher99permission99readSettings(
+			String com99android99xwlauncher99permission99readSettings) {
+		this.com99android99xwlauncher99permission99readSettings = com99android99xwlauncher99permission99readSettings;
+	}
+
+	@Column(name = "android99permission99SET_WALLPAPER_HINTS", length = 11)
+	public String getAndroid99permission99setWallpaperHints() {
+		return this.android99permission99setWallpaperHints;
+	}
+
+	public void setAndroid99permission99setWallpaperHints(
+			String android99permission99setWallpaperHints) {
+		this.android99permission99setWallpaperHints = android99permission99setWallpaperHints;
+	}
+
+	@Column(name = "com99android99XWLauncher99permission99WRITE_SETTINGS", length = 11)
+	public String getCom99android99xwlauncher99permission99writeSettings() {
+		return this.com99android99xwlauncher99permission99writeSettings;
+	}
+
+	public void setCom99android99xwlauncher99permission99writeSettings(
+			String com99android99xwlauncher99permission99writeSettings) {
+		this.com99android99xwlauncher99permission99writeSettings = com99android99xwlauncher99permission99writeSettings;
+	}
+
+	@Column(name = "android99permission99BIND_APPWIDGET", length = 11)
+	public String getAndroid99permission99bindAppwidget() {
+		return this.android99permission99bindAppwidget;
+	}
+
+	public void setAndroid99permission99bindAppwidget(
+			String android99permission99bindAppwidget) {
+		this.android99permission99bindAppwidget = android99permission99bindAppwidget;
+	}
+
+	@Column(name = "android99permission99PERSISTENT_ACTIVITY", length = 11)
+	public String getAndroid99permission99persistentActivity() {
+		return this.android99permission99persistentActivity;
+	}
+
+	public void setAndroid99permission99persistentActivity(
+			String android99permission99persistentActivity) {
+		this.android99permission99persistentActivity = android99permission99persistentActivity;
+	}
+
+	@Column(name = "android99permission99DELETE_CACHE_FILES", length = 11)
+	public String getAndroid99permission99deleteCacheFiles() {
+		return this.android99permission99deleteCacheFiles;
+	}
+
+	public void setAndroid99permission99deleteCacheFiles(
+			String android99permission99deleteCacheFiles) {
+		this.android99permission99deleteCacheFiles = android99permission99deleteCacheFiles;
+	}
+
+	@Column(name = "android99permission99BOOT_COMPLETED", length = 11)
+	public String getAndroid99permission99bootCompleted() {
+		return this.android99permission99bootCompleted;
+	}
+
+	public void setAndroid99permission99bootCompleted(
+			String android99permission99bootCompleted) {
+		this.android99permission99bootCompleted = android99permission99bootCompleted;
+	}
+
+	@Column(name = "android99permission99CALL_PRIVILEGED", length = 11)
+	public String getAndroid99permission99callPrivileged() {
+		return this.android99permission99callPrivileged;
+	}
+
+	public void setAndroid99permission99callPrivileged(
+			String android99permission99callPrivileged) {
+		this.android99permission99callPrivileged = android99permission99callPrivileged;
+	}
+
+	@Column(name = "com99ikangoo99whatssex99permission99C2D_MESSAGE", length = 11)
+	public String getCom99ikangoo99whatssex99permission99c2dMessage() {
+		return this.com99ikangoo99whatssex99permission99c2dMessage;
+	}
+
+	public void setCom99ikangoo99whatssex99permission99c2dMessage(
+			String com99ikangoo99whatssex99permission99c2dMessage) {
+		this.com99ikangoo99whatssex99permission99c2dMessage = com99ikangoo99whatssex99permission99c2dMessage;
+	}
+
+	@Column(name = "android99permission99ADD_SYSTEM_SERVICE", length = 11)
+	public String getAndroid99permission99addSystemService() {
+		return this.android99permission99addSystemService;
+	}
+
+	public void setAndroid99permission99addSystemService(
+			String android99permission99addSystemService) {
+		this.android99permission99addSystemService = android99permission99addSystemService;
+	}
+
+	@Column(name = "com99android99vending99BILLING", length = 11)
+	public String getCom99android99vending99billing() {
+		return this.com99android99vending99billing;
+	}
+
+	public void setCom99android99vending99billing(
+			String com99android99vending99billing) {
+		this.com99android99vending99billing = com99android99vending99billing;
+	}
+
+	@Column(name = "com99android99vending99CHECK_LICENSE", length = 11)
+	public String getCom99android99vending99checkLicense() {
+		return this.com99android99vending99checkLicense;
+	}
+
+	public void setCom99android99vending99checkLicense(
+			String com99android99vending99checkLicense) {
+		this.com99android99vending99checkLicense = com99android99vending99checkLicense;
+	}
+
+	@Column(name = "com99kiloo99kkkkkkkYwx99permission99C2D_MESSAGE", length = 11)
+	public String getCom99kiloo99kkkkkkkYwx99permission99c2dMessage() {
+		return this.com99kiloo99kkkkkkkYwx99permission99c2dMessage;
+	}
+
+	public void setCom99kiloo99kkkkkkkYwx99permission99c2dMessage(
+			String com99kiloo99kkkkkkkYwx99permission99c2dMessage) {
+		this.com99kiloo99kkkkkkkYwx99permission99c2dMessage = com99kiloo99kkkkkkkYwx99permission99c2dMessage;
+	}
+
+	@Column(name = "android99permission99LOCATION", length = 11)
+	public String getAndroid99permission99location() {
+		return this.android99permission99location;
+	}
+
+	public void setAndroid99permission99location(
+			String android99permission99location) {
+		this.android99permission99location = android99permission99location;
+	}
+
+	@Column(name = "android99permission99GLOBAL_SEARCH", length = 11)
+	public String getAndroid99permission99globalSearch() {
+		return this.android99permission99globalSearch;
+	}
+
+	public void setAndroid99permission99globalSearch(
+			String android99permission99globalSearch) {
+		this.android99permission99globalSearch = android99permission99globalSearch;
+	}
+
+	@Column(name = "android99permission99SET_TIME_ZONE", length = 11)
+	public String getAndroid99permission99setTimeZone() {
+		return this.android99permission99setTimeZone;
+	}
+
+	public void setAndroid99permission99setTimeZone(
+			String android99permission99setTimeZone) {
+		this.android99permission99setTimeZone = android99permission99setTimeZone;
+	}
+
+	@Column(name = "com99motorola99launcher99permission99WRITE_SETTINGS", length = 11)
+	public String getCom99motorola99launcher99permission99writeSettings() {
+		return this.com99motorola99launcher99permission99writeSettings;
+	}
+
+	public void setCom99motorola99launcher99permission99writeSettings(
+			String com99motorola99launcher99permission99writeSettings) {
+		this.com99motorola99launcher99permission99writeSettings = com99motorola99launcher99permission99writeSettings;
+	}
+
+	@Column(name = "com99fede99launcher99permission99WRITE_SETTINGS", length = 11)
+	public String getCom99fede99launcher99permission99writeSettings() {
+		return this.com99fede99launcher99permission99writeSettings;
+	}
+
+	public void setCom99fede99launcher99permission99writeSettings(
+			String com99fede99launcher99permission99writeSettings) {
+		this.com99fede99launcher99permission99writeSettings = com99fede99launcher99permission99writeSettings;
+	}
+
+	@Column(name = "com99htc99launcher99permission99WRITE_SETTINGS", length = 11)
+	public String getCom99htc99launcher99permission99writeSettings() {
+		return this.com99htc99launcher99permission99writeSettings;
+	}
+
+	public void setCom99htc99launcher99permission99writeSettings(
+			String com99htc99launcher99permission99writeSettings) {
+		this.com99htc99launcher99permission99writeSettings = com99htc99launcher99permission99writeSettings;
+	}
+
+	@Column(name = "com99lge99launcher99permission99WRITE_SETTINGS", length = 11)
+	public String getCom99lge99launcher99permission99writeSettings() {
+		return this.com99lge99launcher99permission99writeSettings;
+	}
+
+	public void setCom99lge99launcher99permission99writeSettings(
+			String com99lge99launcher99permission99writeSettings) {
+		this.com99lge99launcher99permission99writeSettings = com99lge99launcher99permission99writeSettings;
+	}
+
+	@Column(name = "com99motorola99dlauncher99permission99WRITE_SETTINGS", length = 11)
+	public String getCom99motorola99dlauncher99permission99writeSettings() {
+		return this.com99motorola99dlauncher99permission99writeSettings;
+	}
+
+	public void setCom99motorola99dlauncher99permission99writeSettings(
+			String com99motorola99dlauncher99permission99writeSettings) {
+		this.com99motorola99dlauncher99permission99writeSettings = com99motorola99dlauncher99permission99writeSettings;
+	}
+
+	@Column(name = "org99adw99launcher99permission99WRITE_SETTINGS", length = 11)
+	public String getOrg99adw99launcher99permission99writeSettings() {
+		return this.org99adw99launcher99permission99writeSettings;
+	}
+
+	public void setOrg99adw99launcher99permission99writeSettings(
+			String org99adw99launcher99permission99writeSettings) {
+		this.org99adw99launcher99permission99writeSettings = org99adw99launcher99permission99writeSettings;
+	}
+
+	@Column(name = "android99permission99RAISED_THREAD_PRIORITY", length = 11)
+	public String getAndroid99permission99raisedThreadPriority() {
+		return this.android99permission99raisedThreadPriority;
+	}
+
+	public void setAndroid99permission99raisedThreadPriority(
+			String android99permission99raisedThreadPriority) {
+		this.android99permission99raisedThreadPriority = android99permission99raisedThreadPriority;
+	}
+
+	@Column(name = "android99permission99INTERACT_ACROSS_USERS_FULL", length = 11)
+	public String getAndroid99permission99interactAcrossUsersFull() {
+		return this.android99permission99interactAcrossUsersFull;
+	}
+
+	public void setAndroid99permission99interactAcrossUsersFull(
+			String android99permission99interactAcrossUsersFull) {
+		this.android99permission99interactAcrossUsersFull = android99permission99interactAcrossUsersFull;
+	}
+
+	@Column(name = "com99jolopay99permission99JOLOPAY", length = 11)
+	public String getCom99jolopay99permission99jolopay() {
+		return this.com99jolopay99permission99jolopay;
+	}
+
+	public void setCom99jolopay99permission99jolopay(
+			String com99jolopay99permission99jolopay) {
+		this.com99jolopay99permission99jolopay = com99jolopay99permission99jolopay;
+	}
+
+	@Column(name = "android99permission99SENDTO", length = 11)
+	public String getAndroid99permission99sendto() {
+		return this.android99permission99sendto;
+	}
+
+	public void setAndroid99permission99sendto(
+			String android99permission99sendto) {
+		this.android99permission99sendto = android99permission99sendto;
+	}
+
+	@Column(name = "com99saavn99android99permission99C2D_MESSAGE", length = 11)
+	public String getCom99saavn99android99permission99c2dMessage() {
+		return this.com99saavn99android99permission99c2dMessage;
+	}
+
+	public void setCom99saavn99android99permission99c2dMessage(
+			String com99saavn99android99permission99c2dMessage) {
+		this.com99saavn99android99permission99c2dMessage = com99saavn99android99permission99c2dMessage;
+	}
+
+	@Column(name = "com99hengtalk99fishjoy99control99menu99permission99JPUSH_MESSAGE", length = 11)
+	public String getCom99hengtalk99fishjoy99control99menu99permission99jpushMessage() {
+		return this.com99hengtalk99fishjoy99control99menu99permission99jpushMessage;
+	}
+
+	public void setCom99hengtalk99fishjoy99control99menu99permission99jpushMessage(
+			String com99hengtalk99fishjoy99control99menu99permission99jpushMessage) {
+		this.com99hengtalk99fishjoy99control99menu99permission99jpushMessage = com99hengtalk99fishjoy99control99menu99permission99jpushMessage;
+	}
+
+	@Column(name = "com99ut99permission99DEVICE_STATE", length = 11)
+	public String getCom99ut99permission99deviceState() {
+		return this.com99ut99permission99deviceState;
+	}
+
+	public void setCom99ut99permission99deviceState(
+			String com99ut99permission99deviceState) {
+		this.com99ut99permission99deviceState = com99ut99permission99deviceState;
+	}
+
+	@Column(name = "com99youyuan99yyhl99permission99JPUSH_MESSAGE", length = 11)
+	public String getCom99youyuan99yyhl99permission99jpushMessage() {
+		return this.com99youyuan99yyhl99permission99jpushMessage;
+	}
+
+	public void setCom99youyuan99yyhl99permission99jpushMessage(
+			String com99youyuan99yyhl99permission99jpushMessage) {
+		this.com99youyuan99yyhl99permission99jpushMessage = com99youyuan99yyhl99permission99jpushMessage;
+	}
+
+	@Column(name = "android99permission99READ_OWNER_DATA", length = 11)
+	public String getAndroid99permission99readOwnerData() {
+		return this.android99permission99readOwnerData;
+	}
+
+	public void setAndroid99permission99readOwnerData(
+			String android99permission99readOwnerData) {
+		this.android99permission99readOwnerData = android99permission99readOwnerData;
+	}
+
+	@Column(name = "android99permission99ACCESS_SURFACE_FLINGER", length = 11)
+	public String getAndroid99permission99accessSurfaceFlinger() {
+		return this.android99permission99accessSurfaceFlinger;
+	}
+
+	public void setAndroid99permission99accessSurfaceFlinger(
+			String android99permission99accessSurfaceFlinger) {
+		this.android99permission99accessSurfaceFlinger = android99permission99accessSurfaceFlinger;
+	}
+
+	@Column(name = "android99permission99FORCE_BACK", length = 11)
+	public String getAndroid99permission99forceBack() {
+		return this.android99permission99forceBack;
+	}
+
+	public void setAndroid99permission99forceBack(
+			String android99permission99forceBack) {
+		this.android99permission99forceBack = android99permission99forceBack;
+	}
+
+	@Column(name = "android99permission99DUMP", length = 11)
+	public String getAndroid99permission99dump() {
+		return this.android99permission99dump;
+	}
+
+	public void setAndroid99permission99dump(String android99permission99dump) {
+		this.android99permission99dump = android99permission99dump;
+	}
+
+	@Column(name = "android99permission99SET_DEBUG_APP", length = 11)
+	public String getAndroid99permission99setDebugApp() {
+		return this.android99permission99setDebugApp;
+	}
+
+	public void setAndroid99permission99setDebugApp(
+			String android99permission99setDebugApp) {
+		this.android99permission99setDebugApp = android99permission99setDebugApp;
+	}
+
+	@Column(name = "android99permission99CONTROL_LOCATION_UPDATES", length = 11)
+	public String getAndroid99permission99controlLocationUpdates() {
+		return this.android99permission99controlLocationUpdates;
+	}
+
+	public void setAndroid99permission99controlLocationUpdates(
+			String android99permission99controlLocationUpdates) {
+		this.android99permission99controlLocationUpdates = android99permission99controlLocationUpdates;
+	}
+
+	@Column(name = "android99permission99USE_CREDENTIALS", length = 11)
+	public String getAndroid99permission99useCredentials() {
+		return this.android99permission99useCredentials;
+	}
+
+	public void setAndroid99permission99useCredentials(
+			String android99permission99useCredentials) {
+		this.android99permission99useCredentials = android99permission99useCredentials;
+	}
+
+	@Column(name = "android99permission99BROADCAST_WAP_PUSH", length = 11)
+	public String getAndroid99permission99broadcastWapPush() {
+		return this.android99permission99broadcastWapPush;
+	}
+
+	public void setAndroid99permission99broadcastWapPush(
+			String android99permission99broadcastWapPush) {
+		this.android99permission99broadcastWapPush = android99permission99broadcastWapPush;
+	}
+
+	@Column(name = "android99permission99CHANGE_WIFI_MULTICAST_STATE", length = 11)
+	public String getAndroid99permission99changeWifiMulticastState() {
+		return this.android99permission99changeWifiMulticastState;
+	}
+
+	public void setAndroid99permission99changeWifiMulticastState(
+			String android99permission99changeWifiMulticastState) {
+		this.android99permission99changeWifiMulticastState = android99permission99changeWifiMulticastState;
+	}
+
+	@Column(name = "android99permission99STATUS_BAR", length = 11)
+	public String getAndroid99permission99statusBar() {
+		return this.android99permission99statusBar;
+	}
+
+	public void setAndroid99permission99statusBar(
+			String android99permission99statusBar) {
+		this.android99permission99statusBar = android99permission99statusBar;
+	}
+
+	@Column(name = "android99permission99BROADCAST_PACKAGE_REMOVED", length = 11)
+	public String getAndroid99permission99broadcastPackageRemoved() {
+		return this.android99permission99broadcastPackageRemoved;
+	}
+
+	public void setAndroid99permission99broadcastPackageRemoved(
+			String android99permission99broadcastPackageRemoved) {
+		this.android99permission99broadcastPackageRemoved = android99permission99broadcastPackageRemoved;
+	}
+
+	@Column(name = "android99permission99SET_TIME", length = 11)
+	public String getAndroid99permission99setTime() {
+		return this.android99permission99setTime;
+	}
+
+	public void setAndroid99permission99setTime(
+			String android99permission99setTime) {
+		this.android99permission99setTime = android99permission99setTime;
+	}
+
+	@Column(name = "android99permission99SIGNAL_PERSISTENT_PROCESSES", length = 11)
+	public String getAndroid99permission99signalPersistentProcesses() {
+		return this.android99permission99signalPersistentProcesses;
+	}
+
+	public void setAndroid99permission99signalPersistentProcesses(
+			String android99permission99signalPersistentProcesses) {
+		this.android99permission99signalPersistentProcesses = android99permission99signalPersistentProcesses;
+	}
+
+	@Column(name = "android99permission99SET_PREFERRED_APPLICATIONS", length = 11)
+	public String getAndroid99permission99setPreferredApplications() {
+		return this.android99permission99setPreferredApplications;
+	}
+
+	public void setAndroid99permission99setPreferredApplications(
+			String android99permission99setPreferredApplications) {
+		this.android99permission99setPreferredApplications = android99permission99setPreferredApplications;
+	}
+
+	@Column(name = "com99android99alarm99permission99SET_ALARM", length = 11)
+	public String getCom99android99alarm99permission99setAlarm() {
+		return this.com99android99alarm99permission99setAlarm;
+	}
+
+	public void setCom99android99alarm99permission99setAlarm(
+			String com99android99alarm99permission99setAlarm) {
+		this.com99android99alarm99permission99setAlarm = com99android99alarm99permission99setAlarm;
+	}
+
+	@Column(name = "android99permission99INJECT_EVENTS", length = 11)
+	public String getAndroid99permission99injectEvents() {
+		return this.android99permission99injectEvents;
+	}
+
+	public void setAndroid99permission99injectEvents(
+			String android99permission99injectEvents) {
+		this.android99permission99injectEvents = android99permission99injectEvents;
+	}
+
+	@Column(name = "android99permission99READ_FRAME_BUFFER", length = 11)
+	public String getAndroid99permission99readFrameBuffer() {
+		return this.android99permission99readFrameBuffer;
+	}
+
+	public void setAndroid99permission99readFrameBuffer(
+			String android99permission99readFrameBuffer) {
+		this.android99permission99readFrameBuffer = android99permission99readFrameBuffer;
+	}
+
+	@Column(name = "android99permission99SET_ALWAYS_FINISH", length = 11)
+	public String getAndroid99permission99setAlwaysFinish() {
+		return this.android99permission99setAlwaysFinish;
+	}
+
+	public void setAndroid99permission99setAlwaysFinish(
+			String android99permission99setAlwaysFinish) {
+		this.android99permission99setAlwaysFinish = android99permission99setAlwaysFinish;
+	}
+
+	@Column(name = "android99permission99USE_SIP", length = 11)
+	public String getAndroid99permission99useSip() {
+		return this.android99permission99useSip;
+	}
+
+	public void setAndroid99permission99useSip(
+			String android99permission99useSip) {
+		this.android99permission99useSip = android99permission99useSip;
+	}
+
+	@Column(name = "android99permission99SET_ORIENTATION", length = 11)
+	public String getAndroid99permission99setOrientation() {
+		return this.android99permission99setOrientation;
+	}
+
+	public void setAndroid99permission99setOrientation(
+			String android99permission99setOrientation) {
+		this.android99permission99setOrientation = android99permission99setOrientation;
+	}
+
+	@Column(name = "com99huawei99launcher399permission99READ_SETTINGS", length = 11)
+	public String getCom99huawei99launcher399permission99readSettings() {
+		return this.com99huawei99launcher399permission99readSettings;
+	}
+
+	public void setCom99huawei99launcher399permission99readSettings(
+			String com99huawei99launcher399permission99readSettings) {
+		this.com99huawei99launcher399permission99readSettings = com99huawei99launcher399permission99readSettings;
+	}
+
+	@Column(name = "android99permission99WRITE_MEDIA_STORAGE", length = 11)
+	public String getAndroid99permission99writeMediaStorage() {
+		return this.android99permission99writeMediaStorage;
+	}
+
+	public void setAndroid99permission99writeMediaStorage(
+			String android99permission99writeMediaStorage) {
+		this.android99permission99writeMediaStorage = android99permission99writeMediaStorage;
+	}
+
+	@Column(name = "com99huawei99launcher299permission99READ_SETTINGS", length = 11)
+	public String getCom99huawei99launcher299permission99readSettings() {
+		return this.com99huawei99launcher299permission99readSettings;
+	}
+
+	public void setCom99huawei99launcher299permission99readSettings(
+			String com99huawei99launcher299permission99readSettings) {
+		this.com99huawei99launcher299permission99readSettings = com99huawei99launcher299permission99readSettings;
+	}
+
+	@Column(name = "com99qihoo36099launcher99permission99READ_SETTINGS", length = 11)
+	public String getCom99qihoo36099launcher99permission99readSettings() {
+		return this.com99qihoo36099launcher99permission99readSettings;
+	}
+
+	public void setCom99qihoo36099launcher99permission99readSettings(
+			String com99qihoo36099launcher99permission99readSettings) {
+		this.com99qihoo36099launcher99permission99readSettings = com99qihoo36099launcher99permission99readSettings;
+	}
+
+	@Column(name = "com99android99launcher399permission99READ_SETTINGS", length = 11)
+	public String getCom99android99launcher399permission99readSettings() {
+		return this.com99android99launcher399permission99readSettings;
+	}
+
+	public void setCom99android99launcher399permission99readSettings(
+			String com99android99launcher399permission99readSettings) {
+		this.com99android99launcher399permission99readSettings = com99android99launcher399permission99readSettings;
+	}
+
+	@Column(name = "com99anddoes99launcher99permission99READ_SETTINGS", length = 11)
+	public String getCom99anddoes99launcher99permission99readSettings() {
+		return this.com99anddoes99launcher99permission99readSettings;
+	}
+
+	public void setCom99anddoes99launcher99permission99readSettings(
+			String com99anddoes99launcher99permission99readSettings) {
+		this.com99anddoes99launcher99permission99readSettings = com99anddoes99launcher99permission99readSettings;
+	}
+
+	@Column(name = "com99android99launcher299permission99READ_SETTINGS", length = 11)
+	public String getCom99android99launcher299permission99readSettings() {
+		return this.com99android99launcher299permission99readSettings;
+	}
+
+	public void setCom99android99launcher299permission99readSettings(
+			String com99android99launcher299permission99readSettings) {
+		this.com99android99launcher299permission99readSettings = com99android99launcher299permission99readSettings;
+	}
+
+	@Column(name = "android99permission99SET_ACTIVITY_WATCHER", length = 11)
+	public String getAndroid99permission99setActivityWatcher() {
+		return this.android99permission99setActivityWatcher;
+	}
+
+	public void setAndroid99permission99setActivityWatcher(
+			String android99permission99setActivityWatcher) {
+		this.android99permission99setActivityWatcher = android99permission99setActivityWatcher;
+	}
+
+	@Column(name = "com99huawei99android99launcher99permission99READ_SETTINGS", length = 11)
+	public String getCom99huawei99android99launcher99permission99readSettings() {
+		return this.com99huawei99android99launcher99permission99readSettings;
+	}
+
+	public void setCom99huawei99android99launcher99permission99readSettings(
+			String com99huawei99android99launcher99permission99readSettings) {
+		this.com99huawei99android99launcher99permission99readSettings = com99huawei99android99launcher99permission99readSettings;
+	}
+
+	@Column(name = "com99bbk99launcher299permission99READ_SETTINGS", length = 11)
+	public String getCom99bbk99launcher299permission99readSettings() {
+		return this.com99bbk99launcher299permission99readSettings;
+	}
+
+	public void setCom99bbk99launcher299permission99readSettings(
+			String com99bbk99launcher299permission99readSettings) {
+		this.com99bbk99launcher299permission99readSettings = com99bbk99launcher299permission99readSettings;
+	}
+
+	@Column(name = "com99aspire99mm99permission99READ_SETTINGS", length = 11)
+	public String getCom99aspire99mm99permission99readSettings() {
+		return this.com99aspire99mm99permission99readSettings;
+	}
+
+	public void setCom99aspire99mm99permission99readSettings(
+			String com99aspire99mm99permission99readSettings) {
+		this.com99aspire99mm99permission99readSettings = com99aspire99mm99permission99readSettings;
+	}
+
+	@Column(name = "android99permission99READ_SYNC_SETTINGS", length = 11)
+	public String getAndroid99permission99readSyncSettings() {
+		return this.android99permission99readSyncSettings;
+	}
+
+	public void setAndroid99permission99readSyncSettings(
+			String android99permission99readSyncSettings) {
+		this.android99permission99readSyncSettings = android99permission99readSyncSettings;
+	}
+
+	@Column(name = "android99permission99WRITE_SYNC_SETTINGS", length = 11)
+	public String getAndroid99permission99writeSyncSettings() {
+		return this.android99permission99writeSyncSettings;
+	}
+
+	public void setAndroid99permission99writeSyncSettings(
+			String android99permission99writeSyncSettings) {
+		this.android99permission99writeSyncSettings = android99permission99writeSyncSettings;
+	}
+
+	@Column(name = "com99qihoo36099mobilesafe99shield99permission99broadcast", length = 11)
+	public String getCom99qihoo36099mobilesafe99shield99permission99broadcast() {
+		return this.com99qihoo36099mobilesafe99shield99permission99broadcast;
+	}
+
+	public void setCom99qihoo36099mobilesafe99shield99permission99broadcast(
+			String com99qihoo36099mobilesafe99shield99permission99broadcast) {
+		this.com99qihoo36099mobilesafe99shield99permission99broadcast = com99qihoo36099mobilesafe99shield99permission99broadcast;
+	}
+
+	@Column(name = "com99qihoo36099mobilesafe99permission99broadcast", length = 11)
+	public String getCom99qihoo36099mobilesafe99permission99broadcast() {
+		return this.com99qihoo36099mobilesafe99permission99broadcast;
+	}
+
+	public void setCom99qihoo36099mobilesafe99permission99broadcast(
+			String com99qihoo36099mobilesafe99permission99broadcast) {
+		this.com99qihoo36099mobilesafe99permission99broadcast = com99qihoo36099mobilesafe99permission99broadcast;
+	}
+
+	@Column(name = "getui99permission99GetuiService", length = 11)
+	public String getGetui99permission99getuiService() {
+		return this.getui99permission99getuiService;
+	}
+
+	public void setGetui99permission99getuiService(
+			String getui99permission99getuiService) {
+		this.getui99permission99getuiService = getui99permission99getuiService;
+	}
+
+	@Column(name = "android99permission99READ_SETTINGS", length = 11)
+	public String getAndroid99permission99readSettings() {
+		return this.android99permission99readSettings;
+	}
+
+	public void setAndroid99permission99readSettings(
+			String android99permission99readSettings) {
+		this.android99permission99readSettings = android99permission99readSettings;
+	}
+
+	@Column(name = "com99hengtalk99fruitbubble99permission99JPUSH_MESSAGE", length = 11)
+	public String getCom99hengtalk99fruitbubble99permission99jpushMessage() {
+		return this.com99hengtalk99fruitbubble99permission99jpushMessage;
+	}
+
+	public void setCom99hengtalk99fruitbubble99permission99jpushMessage(
+			String com99hengtalk99fruitbubble99permission99jpushMessage) {
+		this.com99hengtalk99fruitbubble99permission99jpushMessage = com99hengtalk99fruitbubble99permission99jpushMessage;
+	}
+
+	@Column(name = "com99huawei99android99launcher99permission99WRITE_SETTINGS", length = 11)
+	public String getCom99huawei99android99launcher99permission99writeSettings() {
+		return this.com99huawei99android99launcher99permission99writeSettings;
+	}
+
+	public void setCom99huawei99android99launcher99permission99writeSettings(
+			String com99huawei99android99launcher99permission99writeSettings) {
+		this.com99huawei99android99launcher99permission99writeSettings = com99huawei99android99launcher99permission99writeSettings;
+	}
+
+	@Column(name = "com99sec99android99app99twlauncher99WRITE_SETTINGS", length = 11)
+	public String getCom99sec99android99app99twlauncher99writeSettings() {
+		return this.com99sec99android99app99twlauncher99writeSettings;
+	}
+
+	public void setCom99sec99android99app99twlauncher99writeSettings(
+			String com99sec99android99app99twlauncher99writeSettings) {
+		this.com99sec99android99app99twlauncher99writeSettings = com99sec99android99app99twlauncher99writeSettings;
+	}
+
+	@Column(name = "com99qihoo99appstore99rtservice99ACCESS_RTSERVICE", length = 11)
+	public String getCom99qihoo99appstore99rtservice99accessRtservice() {
+		return this.com99qihoo99appstore99rtservice99accessRtservice;
+	}
+
+	public void setCom99qihoo99appstore99rtservice99accessRtservice(
+			String com99qihoo99appstore99rtservice99accessRtservice) {
+		this.com99qihoo99appstore99rtservice99accessRtservice = com99qihoo99appstore99rtservice99accessRtservice;
+	}
+
+	@Column(name = "android99permission99WRITE_OWNER_DATA", length = 11)
+	public String getAndroid99permission99writeOwnerData() {
+		return this.android99permission99writeOwnerData;
+	}
+
+	public void setAndroid99permission99writeOwnerData(
+			String android99permission99writeOwnerData) {
+		this.android99permission99writeOwnerData = android99permission99writeOwnerData;
+	}
+
+	@Column(name = "com99qihoo36099launcher99permission99WRITE_SETTINGS", length = 11)
+	public String getCom99qihoo36099launcher99permission99writeSettings() {
+		return this.com99qihoo36099launcher99permission99writeSettings;
+	}
+
+	public void setCom99qihoo36099launcher99permission99writeSettings(
+			String com99qihoo36099launcher99permission99writeSettings) {
+		this.com99qihoo36099launcher99permission99writeSettings = com99qihoo36099launcher99permission99writeSettings;
+	}
+
+	@Column(name = "com99qihoo36099home99permission99READ_SETTINGS", length = 11)
+	public String getCom99qihoo36099home99permission99readSettings() {
+		return this.com99qihoo36099home99permission99readSettings;
+	}
+
+	public void setCom99qihoo36099home99permission99readSettings(
+			String com99qihoo36099home99permission99readSettings) {
+		this.com99qihoo36099home99permission99readSettings = com99qihoo36099home99permission99readSettings;
+	}
+
+	@Column(name = "com99lenovo99launcher99permission99WRITE_SETTINGS", length = 11)
+	public String getCom99lenovo99launcher99permission99writeSettings() {
+		return this.com99lenovo99launcher99permission99writeSettings;
+	}
+
+	public void setCom99lenovo99launcher99permission99writeSettings(
+			String com99lenovo99launcher99permission99writeSettings) {
+		this.com99lenovo99launcher99permission99writeSettings = com99lenovo99launcher99permission99writeSettings;
+	}
+
+	@Column(name = "com99sec99android99app99twlauncher99READ_SETTINGS", length = 11)
+	public String getCom99sec99android99app99twlauncher99readSettings() {
+		return this.com99sec99android99app99twlauncher99readSettings;
+	}
+
+	public void setCom99sec99android99app99twlauncher99readSettings(
+			String com99sec99android99app99twlauncher99readSettings) {
+		this.com99sec99android99app99twlauncher99readSettings = com99sec99android99app99twlauncher99readSettings;
+	}
+
+	@Column(name = "org99adwfreak99launcher99permission99WRITE_SETTINGS", length = 11)
+	public String getOrg99adwfreak99launcher99permission99writeSettings() {
+		return this.org99adwfreak99launcher99permission99writeSettings;
+	}
+
+	public void setOrg99adwfreak99launcher99permission99writeSettings(
+			String org99adwfreak99launcher99permission99writeSettings) {
+		this.org99adwfreak99launcher99permission99writeSettings = org99adwfreak99launcher99permission99writeSettings;
+	}
+
+	@Column(name = "com99nd99android99launcher99permission99READ_SETTINGS", length = 11)
+	public String getCom99nd99android99launcher99permission99readSettings() {
+		return this.com99nd99android99launcher99permission99readSettings;
+	}
+
+	public void setCom99nd99android99launcher99permission99readSettings(
+			String com99nd99android99launcher99permission99readSettings) {
+		this.com99nd99android99launcher99permission99readSettings = com99nd99android99launcher99permission99readSettings;
+	}
+
+	@Column(name = "com99gau99go99launcherex99permission99WRITE_SETTINGS", length = 11)
+	public String getCom99gau99go99launcherex99permission99writeSettings() {
+		return this.com99gau99go99launcherex99permission99writeSettings;
+	}
+
+	public void setCom99gau99go99launcherex99permission99writeSettings(
+			String com99gau99go99launcherex99permission99writeSettings) {
+		this.com99gau99go99launcherex99permission99writeSettings = com99gau99go99launcherex99permission99writeSettings;
+	}
+
+	@Column(name = "com99lenovo99launcher99permission99READ_SETTINGS", length = 11)
+	public String getCom99lenovo99launcher99permission99readSettings() {
+		return this.com99lenovo99launcher99permission99readSettings;
+	}
+
+	public void setCom99lenovo99launcher99permission99readSettings(
+			String com99lenovo99launcher99permission99readSettings) {
+		this.com99lenovo99launcher99permission99readSettings = com99lenovo99launcher99permission99readSettings;
+	}
+
+	@Column(name = "android99permission99ACCESS_CACHE_FILESYSTEM", length = 11)
+	public String getAndroid99permission99accessCacheFilesystem() {
+		return this.android99permission99accessCacheFilesystem;
+	}
+
+	public void setAndroid99permission99accessCacheFilesystem(
+			String android99permission99accessCacheFilesystem) {
+		this.android99permission99accessCacheFilesystem = android99permission99accessCacheFilesystem;
+	}
+
+	@Column(name = "com99gau99go99launcherex99permission99READ_SETTINGS", length = 11)
+	public String getCom99gau99go99launcherex99permission99readSettings() {
+		return this.com99gau99go99launcherex99permission99readSettings;
+	}
+
+	public void setCom99gau99go99launcherex99permission99readSettings(
+			String com99gau99go99launcherex99permission99readSettings) {
+		this.com99gau99go99launcherex99permission99readSettings = com99gau99go99launcherex99permission99readSettings;
+	}
+
+	@Column(name = "com99anddoes99launcher99permission99WRITE_SETTINGS", length = 11)
+	public String getCom99anddoes99launcher99permission99writeSettings() {
+		return this.com99anddoes99launcher99permission99writeSettings;
+	}
+
+	public void setCom99anddoes99launcher99permission99writeSettings(
+			String com99anddoes99launcher99permission99writeSettings) {
+		this.com99anddoes99launcher99permission99writeSettings = com99anddoes99launcher99permission99writeSettings;
+	}
+
+	@Column(name = "com99android99launcher299permission99WRITE_SETTINGS", length = 11)
+	public String getCom99android99launcher299permission99writeSettings() {
+		return this.com99android99launcher299permission99writeSettings;
+	}
+
+	public void setCom99android99launcher299permission99writeSettings(
+			String com99android99launcher299permission99writeSettings) {
+		this.com99android99launcher299permission99writeSettings = com99android99launcher299permission99writeSettings;
+	}
+
+	@Column(name = "com99nd99android99launcher99permission99WRITE_SETTINGS", length = 11)
+	public String getCom99nd99android99launcher99permission99writeSettings() {
+		return this.com99nd99android99launcher99permission99writeSettings;
+	}
+
+	public void setCom99nd99android99launcher99permission99writeSettings(
+			String com99nd99android99launcher99permission99writeSettings) {
+		this.com99nd99android99launcher99permission99writeSettings = com99nd99android99launcher99permission99writeSettings;
+	}
+
+	@Column(name = "org99adwfreak99launcher99permission99READ_SETTINGS", length = 11)
+	public String getOrg99adwfreak99launcher99permission99readSettings() {
+		return this.org99adwfreak99launcher99permission99readSettings;
+	}
+
+	public void setOrg99adwfreak99launcher99permission99readSettings(
+			String org99adwfreak99launcher99permission99readSettings) {
+		this.org99adwfreak99launcher99permission99readSettings = org99adwfreak99launcher99permission99readSettings;
+	}
+
+	@Column(name = "com99qihoo36099home99permission99WRITE_SETTINGS", length = 11)
+	public String getCom99qihoo36099home99permission99writeSettings() {
+		return this.com99qihoo36099home99permission99writeSettings;
+	}
+
+	public void setCom99qihoo36099home99permission99writeSettings(
+			String com99qihoo36099home99permission99writeSettings) {
+		this.com99qihoo36099home99permission99writeSettings = com99qihoo36099home99permission99writeSettings;
+	}
+
+	@Column(name = "com99hzsj99dsjy99permission99JPUSH_MESSAGE", length = 11)
+	public String getCom99hzsj99dsjy99permission99jpushMessage() {
+		return this.com99hzsj99dsjy99permission99jpushMessage;
+	}
+
+	public void setCom99hzsj99dsjy99permission99jpushMessage(
+			String com99hzsj99dsjy99permission99jpushMessage) {
+		this.com99hzsj99dsjy99permission99jpushMessage = com99hzsj99dsjy99permission99jpushMessage;
+	}
+
+	@Column(name = "com99google99android99providers99gsf99permission99READ_GSERVICES", length = 11)
+	public String getCom99google99android99providers99gsf99permission99readGservices() {
+		return this.com99google99android99providers99gsf99permission99readGservices;
+	}
+
+	public void setCom99google99android99providers99gsf99permission99readGservices(
+			String com99google99android99providers99gsf99permission99readGservices) {
+		this.com99google99android99providers99gsf99permission99readGservices = com99google99android99providers99gsf99permission99readGservices;
+	}
+
+	@Column(name = "asia99ivity99qifu99android99permission99MAPS_RECEIVE", length = 11)
+	public String getAsia99ivity99qifu99android99permission99mapsReceive() {
+		return this.asia99ivity99qifu99android99permission99mapsReceive;
+	}
+
+	public void setAsia99ivity99qifu99android99permission99mapsReceive(
+			String asia99ivity99qifu99android99permission99mapsReceive) {
+		this.asia99ivity99qifu99android99permission99mapsReceive = asia99ivity99qifu99android99permission99mapsReceive;
+	}
+
+	@Column(name = "android99permission99GLOBAL_SEARCH_CONTROL", length = 11)
+	public String getAndroid99permission99globalSearchControl() {
+		return this.android99permission99globalSearchControl;
+	}
+
+	public void setAndroid99permission99globalSearchControl(
+			String android99permission99globalSearchControl) {
+		this.android99permission99globalSearchControl = android99permission99globalSearchControl;
+	}
+
+	@Column(name = "android99intent99action99SERVICE_STATE_CHANGED_ACTION", length = 11)
+	public String getAndroid99intent99action99serviceStateChangedAction() {
+		return this.android99intent99action99serviceStateChangedAction;
+	}
+
+	public void setAndroid99intent99action99serviceStateChangedAction(
+			String android99intent99action99serviceStateChangedAction) {
+		this.android99intent99action99serviceStateChangedAction = android99intent99action99serviceStateChangedAction;
+	}
+
+	@Column(name = "android99permission99SILENT", length = 11)
+	public String getAndroid99permission99silent() {
+		return this.android99permission99silent;
+	}
+
+	public void setAndroid99permission99silent(
+			String android99permission99silent) {
+		this.android99permission99silent = android99permission99silent;
+	}
+
+	@Column(name = "android99intent99action99PHONE_STATE", length = 11)
+	public String getAndroid99intent99action99phoneState() {
+		return this.android99intent99action99phoneState;
+	}
+
+	public void setAndroid99intent99action99phoneState(
+			String android99intent99action99phoneState) {
+		this.android99intent99action99phoneState = android99intent99action99phoneState;
+	}
+
+	@Column(name = "android99permission99FORCE_STOP_PACKAGES", length = 11)
+	public String getAndroid99permission99forceStopPackages() {
+		return this.android99permission99forceStopPackages;
+	}
+
+	public void setAndroid99permission99forceStopPackages(
+			String android99permission99forceStopPackages) {
+		this.android99permission99forceStopPackages = android99permission99forceStopPackages;
+	}
+
+	@Column(name = "scott99permission99MY_BROADCAST_PERMISSION", length = 11)
+	public String getScott99permission99myBroadcastPermission() {
+		return this.scott99permission99myBroadcastPermission;
+	}
+
+	public void setScott99permission99myBroadcastPermission(
+			String scott99permission99myBroadcastPermission) {
+		this.scott99permission99myBroadcastPermission = scott99permission99myBroadcastPermission;
+	}
+
+	@Column(name = "android99permission99READ_SYNC_STATS", length = 11)
+	public String getAndroid99permission99readSyncStats() {
+		return this.android99permission99readSyncStats;
+	}
+
+	public void setAndroid99permission99readSyncStats(
+			String android99permission99readSyncStats) {
+		this.android99permission99readSyncStats = android99permission99readSyncStats;
+	}
+
+	@Column(name = "android99permission99ACCESS_AGJ_ALL_DOWNLOADS", length = 11)
+	public String getAndroid99permission99accessAgjAllDownloads() {
+		return this.android99permission99accessAgjAllDownloads;
+	}
+
+	public void setAndroid99permission99accessAgjAllDownloads(
+			String android99permission99accessAgjAllDownloads) {
+		this.android99permission99accessAgjAllDownloads = android99permission99accessAgjAllDownloads;
+	}
+
+	@Column(name = "android99permission99ACCESS_AGJ_DOWNLOAD_ACCESS", length = 11)
+	public String getAndroid99permission99accessAgjDownloadAccess() {
+		return this.android99permission99accessAgjDownloadAccess;
+	}
+
+	public void setAndroid99permission99accessAgjDownloadAccess(
+			String android99permission99accessAgjDownloadAccess) {
+		this.android99permission99accessAgjDownloadAccess = android99permission99accessAgjDownloadAccess;
+	}
+
+	@Column(name = "android99permission99ACCESS_AGJ_DOWNLOAD_MANAGER", length = 11)
+	public String getAndroid99permission99accessAgjDownloadManager() {
+		return this.android99permission99accessAgjDownloadManager;
+	}
+
+	public void setAndroid99permission99accessAgjDownloadManager(
+			String android99permission99accessAgjDownloadManager) {
+		this.android99permission99accessAgjDownloadManager = android99permission99accessAgjDownloadManager;
+	}
+
+	@Column(name = "android99permissions99ACCESS_FINE_LOCATION", length = 11)
+	public String getAndroid99permissions99accessFineLocation() {
+		return this.android99permissions99accessFineLocation;
+	}
+
+	public void setAndroid99permissions99accessFineLocation(
+			String android99permissions99accessFineLocation) {
+		this.android99permissions99accessFineLocation = android99permissions99accessFineLocation;
+	}
+
+	@Column(name = "andorid99permission99WRITE_SETTINGS", length = 11)
+	public String getAndorid99permission99writeSettings() {
+		return this.andorid99permission99writeSettings;
+	}
+
+	public void setAndorid99permission99writeSettings(
+			String andorid99permission99writeSettings) {
+		this.andorid99permission99writeSettings = andorid99permission99writeSettings;
+	}
+
+	@Column(name = "andorid99permission99KILL_BACKGROUND_PROCESSES", length = 11)
+	public String getAndorid99permission99killBackgroundProcesses() {
+		return this.andorid99permission99killBackgroundProcesses;
+	}
+
+	public void setAndorid99permission99killBackgroundProcesses(
+			String andorid99permission99killBackgroundProcesses) {
+		this.andorid99permission99killBackgroundProcesses = andorid99permission99killBackgroundProcesses;
+	}
+
+	@Column(name = "android99permission99BIND_DEVICE_ADMIN", length = 11)
+	public String getAndroid99permission99bindDeviceAdmin() {
+		return this.android99permission99bindDeviceAdmin;
+	}
+
+	public void setAndroid99permission99bindDeviceAdmin(
+			String android99permission99bindDeviceAdmin) {
+		this.android99permission99bindDeviceAdmin = android99permission99bindDeviceAdmin;
+	}
+
+	@Column(name = "android99permission99ACCESS_FIND_LOCATION", length = 11)
+	public String getAndroid99permission99accessFindLocation() {
+		return this.android99permission99accessFindLocation;
+	}
+
+	public void setAndroid99permission99accessFindLocation(
+			String android99permission99accessFindLocation) {
+		this.android99permission99accessFindLocation = android99permission99accessFindLocation;
+	}
+
+	@Column(name = "android99permission99FACTORY_TEST", length = 11)
+	public String getAndroid99permission99factoryTest() {
+		return this.android99permission99factoryTest;
+	}
+
+	public void setAndroid99permission99factoryTest(
+			String android99permission99factoryTest) {
+		this.android99permission99factoryTest = android99permission99factoryTest;
+	}
+
+	@Column(name = "android99permission99INTERNAL_SYSTEM_WINDOW", length = 11)
+	public String getAndroid99permission99internalSystemWindow() {
+		return this.android99permission99internalSystemWindow;
+	}
+
+	public void setAndroid99permission99internalSystemWindow(
+			String android99permission99internalSystemWindow) {
+		this.android99permission99internalSystemWindow = android99permission99internalSystemWindow;
+	}
+
+	@Column(name = "android99permission99MOUNT_FORMAT_FILESYSTEMS", length = 11)
+	public String getAndroid99permission99mountFormatFilesystems() {
+		return this.android99permission99mountFormatFilesystems;
+	}
+
+	public void setAndroid99permission99mountFormatFilesystems(
+			String android99permission99mountFormatFilesystems) {
+		this.android99permission99mountFormatFilesystems = android99permission99mountFormatFilesystems;
+	}
+
+	@Column(name = "com99android99launcher99permission99WAKE_LOCK", length = 11)
+	public String getCom99android99launcher99permission99wakeLock() {
+		return this.com99android99launcher99permission99wakeLock;
+	}
+
+	public void setCom99android99launcher99permission99wakeLock(
+			String com99android99launcher99permission99wakeLock) {
+		this.com99android99launcher99permission99wakeLock = com99android99launcher99permission99wakeLock;
+	}
+
+}
