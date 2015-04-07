@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+
+<session-factory>
+	<!-- hibernate自带连接-->
+	<!-- 
+	<property name="hibernate.connection.driver_class">
+		com.mysql.jdbc.Driver
+	</property>
+	<property name="hibernate.connection.url">
+		jdbc:mysql://192.168.50.37:3306/antivirus?useUnicode=true&amp;characterEncoding=utf8
+	</property>
+	<property name="hibernate.connection.username">root</property>
+	<property name="hibernate.connection.password">
+		123456
+	</property>
+	-->
+
+	<!-- C3P0 JDBC连接池 -->
+	<!-- 
+	<property name="hibernate.connection.provider_class">org.hibernate.connection.C3P0ConnectionProvider</property>
+	<property name="hibernate.c3p0.max_size">20</property> 
+	<property name="hibernate.c3p0.min_size">5</property> 
+	<property name="hibernate.c3p0.timeout">0</property> 
+	<property name="hibernate.c3p0.max_statements">100</property> 
+	<property name="hibernate.c3p0.idle_test_period">0</property>
+	<property name="hibernate.c3p0.acquire_increment">2</property>
+	<property name="hibernate.c3p0.validate">true</property> 
+	-->
+	<!-- proxool 配置 -->
+	<property name="connection.provider_class">org.hibernate.connection.ProxoolConnectionProvider</property>
+	<property name="hibernate.proxool.xml">proxool.xml</property>
+	<property name="hibernate.proxool.pool_alias">DBPool</property>
+	<!-- 其他属性配置 -->
+		<property name="hibernate.dialect">
+		org.hibernate.dialect.MySQLDialect
+	</property>
+	<property name="hibernate.query.factory_class">
+	org.hibernate.hql.ast.ASTQueryTranslatorFactory
+	</property>
+
+	<property name="hibernate.show_sql">true</property>
+	<property name="hibernate.format_sql">true</property>
+	<property name="hibernate.current_session_context_class">
+		thread
+	</property>
+	<property name="hibernate.cglib.use_reflection_optimizer">
+		true
+	</property>
+	<property name="connection.autoReconnect">true</property>
+    <property name="connection.autoReconnectForPools">true</property>
+    <property name="connection.is-connection-validation-required">true</property>
+    <property name="hibernate.connection.autocommit">true</property> 
+	<!-- 映射文件 -->
+	<mapping class="com.myproject.model.User" />
+	<mapping class="com.myproject.model.News" />
+	<mapping class="com.myproject.model.Music" />
+</session-factory>
+
+</hibernate-configuration>
